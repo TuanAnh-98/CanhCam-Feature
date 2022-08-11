@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* Less Function
+>> IMG
+data-uri('image/jpeg;base64','../data/image.jpg'); 
+
+>> MIXIN
+.boxshw, #boxshw {
+  box-shadow: inset 0 0 10px #555;
+}
+.my-other-mixin() {
+  background: white;
+}
+.myclass {
+  .boxshw;
+  .my-other-mixin();
+}
+*/
+/* #OPACITY*/
+.container-fluid {
+  padding: 0;
+}
+#wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.banner img {
+  max-width: 100%;
+}
+.list-products .item {
+  text-align: center;
+  margin-bottom: 30px;
+  border: 1px solid #dfdfdf;
+  padding: 25px 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.list-products .item figure {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.list-products .item figure img {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.list-products .item figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.list-products .item:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.list-products .item .details h5 {
+  height: 30px;
+  overflow: hidden;
+}
+.list-products .item .price {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #FF4D00;
+}
+.products-details .desc h3 {
+  color: #3498db;
+}
+.products-details .desc .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF4D00;
+}
+.products-details .desc p {
+  font-size: 13px;
+  color: #898989;
+}
+.cc-carousel.brands .slider {
+  margin: 0 0;
+}
+.cc-carousel.brands .slider .owl-carousel {
+  margin: 0;
+}
+.cc-carousel.brands .slider .owl-carousel .owl-stage-outer {
+  z-index: 100;
+}
+.cc-carousel.brands .slider .owl-carousel .owl-controls {
+  z-index: 200;
+  margin-bottom: 20px;
+}
+.cc-carousel.brands .slider .owl-carousel .owl-controls .owl-nav > div {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 5px 10px;
+  background: #5198cb;
+  color: #ffffff;
+}
+.cc-carousel.brands .slider .owl-carousel .owl-controls .owl-nav > div i {
+  font-size: 24px;
+}
+.cc-carousel.brands .slider .owl-carousel .owl-controls .owl-nav > div:hover {
+  background: #65a4d1;
+  color: #ffffff;
+}
+.cc-carousel.brands .slider .owl-carousel .owl-controls .owl-dots .owl-dot.active span {
+  background: #3781b7;
+}
+.cc-carousel.brands .item figure {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.cc-carousel.brands .item figure img {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.8)";
+  filter: alpha(opacity=0.8);
+  opacity: 0.8;
+}
+.cc-carousel.brands .item figure figcaption {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+}
+.cc-carousel.brands .item figure figcaption .desc {
+  margin: 20px 20px;
+  overflow: hidden;
+}
+.cc-carousel.brands .item figure figcaption .desc .list-inline {
+  font-size: 13px;
+}
+.cc-carousel.brands .item figure figcaption .desc .list-inline i {
+  font-size: 16px;
+}
+.cc-carousel.brands .item figure figcaption .desc h5 {
+  font-weight: bold;
+}
+.cc-carousel.brands .item figure figcaption .desc a {
+  color: #000000;
+  text-decoration: none;
+}
+.cc-carousel.brands .item figure figcaption .desc a:hover {
+  color: #3781b7;
+}
+.cc-carousel.brands .item figure figcaption .desc p {
+  font-size: 13px;
+}
+.cc-carousel.brands .item:hover figure img {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 767px) {
+  .cc-carousel {
+    /*news*/
+  }
+  .cc-carousel.brands .slider .owl-carousel .owl-controls .owl-nav {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -18px;
+    padding: 0 0;
+    z-index: 400;
+    width: 100%;
+  }
+  .cc-carousel.brands .slider .owl-carousel .owl-controls .owl-nav > div {
+    margin: 0;
+  }
+  .cc-carousel.brands .slider .owl-carousel .owl-controls .owl-nav .owl-prev {
+    float: left;
+  }
+  .cc-carousel.brands .slider .owl-carousel .owl-controls .owl-nav .owl-next {
+    float: right;
+  }
+  .cc-carousel.brands .slider .owl-carousel:hover .owl-controls .owl-nav {
+    display: block;
+  }
+}
+.infomation .tab-pane {
+  padding: 20px 0;
+}

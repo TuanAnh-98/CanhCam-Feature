@@ -1,0 +1,1562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E8D5A83-A845-4643-953D-D48B987C2C79}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CanhCam.Features.Product</RootNamespace>
+    <AssemblyName>CanhCam.Features.Product</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Argotic.Common, Version=2008.0.2.0, Culture=neutral, PublicKeyToken=84b2ce808fb02469, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\Argotic.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Core, Version=2008.0.2.0, Culture=neutral, PublicKeyToken=84b2ce808fb02469, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\Argotic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Extensions, Version=2008.0.2.0, Culture=neutral, PublicKeyToken=84b2ce808fb02469, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\Argotic.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\Published\bin\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Brettle.Web.NeatHtml, Version=1.0.3373.23565, Culture=neutral">
+      <HintPath>..\Published\bin\Brettle.Web.NeatHtml.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Business, Version=1.0.4919.24305, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\CanhCam.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Business.WebHelpers">
+      <HintPath>..\Published\bin\CanhCam.Business.WebHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Data">
+      <HintPath>..\Published\bin\CanhCam.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.News">
+      <HintPath>..\Published\bin\CanhCam.Features.News.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\CanhCam.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Web">
+      <HintPath>..\Published\bin\CanhCam.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Web.Controls, Version=1.0.5073.26264, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\CanhCam.Web.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Web.Editor">
+      <HintPath>..\Published\bin\CanhCam.Web.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Web.Framework">
+      <HintPath>..\Published\bin\CanhCam.Web.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlDiff, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\HtmlDiff.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\_libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI, Version=2013.1.417.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\AccountMenu.ascx" />
+    <Content Include="Account\Address.aspx" />
+    <Content Include="Account\AddressEdit.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\Dashboard.aspx" />
+    <Content Include="Account\LoginFacebook.aspx" />
+    <Content Include="Account\LoginGooglePlus.aspx" />
+    <Content Include="Account\OrderView.aspx" />
+    <Content Include="Account\ProvinceDistrictSetting.ascx" />
+    <Content Include="Account\RewardHistory.aspx" />
+    <Content Include="Account\UpdatePassword.aspx" />
+    <Content Include="Account\UserProfile.aspx" />
+    <Content Include="App_GlobalResources\ProductResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ProductResources.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Product\AdminCP\AffiliateAchieveTargets.aspx" />
+    <Content Include="Product\AdminCP\AffiliateDetail.aspx" />
+    <Content Include="Product\AdminCP\AffiliateLinkProduct.aspx" />
+    <Content Include="Product\AdminCP\AffiliateOrderList.aspx" />
+    <Content Include="Product\AdminCP\AffiliateWithdrawMoneyList.aspx" />
+    <Content Include="Product\AdminCP\AffiliateWithdrawMoneyListAdmin.aspx" />
+    <Content Include="Product\AdminCP\Import\ImportProductsMeta.aspx" />
+    <Content Include="Product\AdminCP\Import\SysnProductUrls.aspx" />
+    <Content Include="Product\AdminCP\Import\DeleteRedirectUrls.aspx" />
+    <Content Include="Product\AdminCP\Import\ImportRedirectUrl.aspx" />
+    <Content Include="Product\AdminCP\Import\ImportNewProduct.aspx" />
+    <Content Include="Product\AdminCP\Import\DeleteProductsTool.aspx" />
+    <Content Include="Product\AdminCP\Import\ImportManufacturers.aspx" />
+    <Content Include="Product\AdminCP\Import\ImportProductsFixBug.aspx" />
+    <Content Include="Product\AdminCP\Import\ImportProductsCustom.aspx" />
+    <Content Include="Product\AdminCP\Import\ImportUpdateProductPrice.aspx" />
+    <Content Include="Product\AdminCP\Location\Countries.aspx" />
+    <Content Include="Product\AdminCP\OrderAdd.aspx" />
+    <Content Include="Product\AdminCP\ProductTypeEdit.aspx" />
+    <Content Include="Product\AdminCP\ProductTypeList.aspx" />
+    <Content Include="Product\AdminCP\ManufacturerEdit.aspx" />
+    <Content Include="Product\AdminCP\Manufacturers.aspx" />
+    <Content Include="Product\AdminCP\Member\CustomerEdit.aspx" />
+    <Content Include="Product\AdminCP\Member\CustomersList.aspx" />
+    <Content Include="Product\AdminCP\Member\MemberRank.aspx" />
+    <Content Include="Product\AdminCP\Member\MemberRankEdit.aspx" />
+    <Content Include="Product\AdminCP\Member\MemberRankView.aspx" />
+    <Content Include="Product\AdminCP\OrderAddNewProductDialog.aspx" />
+    <Content Include="Product\AdminCP\OrderEdit.aspx" />
+    <Content Include="Product\AdminCP\OrderPrint.aspx" />
+    <Content Include="Product\AdminCP\OrderTracking.aspx" />
+    <Content Include="Product\AdminCP\PaymentMethodEdit.aspx" />
+    <Content Include="Product\AdminCP\PaymentMethods.aspx" />
+    <Content Include="Product\AdminCP\ProductSoldOutLetter.aspx" />
+    <Content Include="Product\AdminCP\Promotions\DiscountCoupons.aspx" />
+    <Content Include="Product\AdminCP\Promotions\DiscountGiftDialog.aspx" />
+    <Content Include="Product\AdminCP\Promotions\DiscountChooseGiftDialog.aspx" />
+    <Content Include="Product\AdminCP\Promotions\DiscountComboSaleDialog.aspx" />
+    <Content Include="Product\AdminCP\Promotions\DiscountEdit.aspx" />
+    <Content Include="Product\AdminCP\Promotions\DiscountProductRangeDialog.aspx" />
+    <Content Include="Product\AdminCP\Promotions\Vouchers.aspx" />
+    <Content Include="Product\AdminCP\Promotions\Discounts.aspx" />
+    <Content Include="Product\AdminCP\Reports\BestsellersReport.aspx" />
+    <Content Include="Product\AdminCP\Reports\SalesReport.aspx" />
+    <Content Include="Product\AdminCP\RewardPoint\Settings.aspx" />
+    <Content Include="Product\AdminCP\RewardPoint\UserPointHistoryList.aspx" />
+    <Content Include="Product\AdminCP\RestrictedShippingList.aspx" />
+    <Content Include="Product\AdminCP\ViettelPost\ShippingLocation.aspx" />
+    <Content Include="Product\AdminCP\ViettelPost\ViettelPostProvince.aspx" />
+    <Content Include="Product\Compare.aspx" />
+    <Content Include="Product\Controls\AdminProductChildControl.ascx" />
+    <Content Include="Product\Controls\AffiliateWithdrawMoneyForm.ascx" />
+    <Content Include="Product\Controls\CheckoutZonesSetting.ascx" />
+    <Content Include="Product\Controls\NewsRelatedControl.ascx" />
+    <Content Include="Product\Controls\ProductGroupControl.ascx" />
+    <Content Include="Product\Controls\ProductSoldOutletterControl.ascx" />
+    <Content Include="Product\Controls\ParentZonesSetting.ascx" />
+    <Content Include="Product\AdminCP\ReviewList.aspx" />
+    <Content Include="Product\AdminCP\ReviewEdit.aspx" />
+    <Content Include="Product\CheckoutAddressModule.ascx" />
+    <Content Include="Product\CheckoutLoginModule.ascx" />
+    <Content Include="Product\CheckoutMethodModule.ascx" />
+    <Content Include="Product\CheckoutCompletedModule.ascx" />
+    <Content Include="Product\Controls\ProductHotDealModule.ascx" />
+    <Content Include="Product\Controls\PromotionLoadTypeSetting.ascx" />
+    <Content Include="Product\Payments\Momo\MoMoIPN.aspx" />
+    <Content Include="Product\Payments\Momo\MoMoRedirect.aspx" />
+    <Content Include="Product\Payments\NganLuong\AlepayCallback.aspx" />
+    <Content Include="Product\Payments\NganLuong\Result.aspx" />
+    <Content Include="Product\Payments\Payoo\Callback.aspx" />
+    <Content Include="Product\Payments\Payoo\Callbackipn.aspx" />
+    <Content Include="Product\Promotion.aspx" />
+    <Content Include="Product\PromotionDetailModule.ascx" />
+    <Content Include="Product\ManufacturerDetailModule.ascx" />
+    <Content Include="Product\Manufacturer.aspx" />
+    <Content Include="Product\ManufacturerModule.ascx" />
+    <Content Include="Product\Services\OrderService.aspx" />
+    <Content Include="Product\Services\ProductService.aspx" />
+    <Content Include="Product\PromotionModule.ascx" />
+    <Content Include="Product\Shipment\ViettelPost\Webhook.aspx" />
+    <Content Include="Product\Payments\VNPay\Callback.aspx" />
+    <Content Include="Product\Payments\VNPay\Callbackipn.aspx" />
+    <Content Include="Product\Wishlist.aspx" />
+    <Content Include="Product\Payments\OnePay\Callback.aspx" />
+    <Content Include="Product\Payments\OnePay\CallbackIPN.aspx" />
+    <Content Include="Product\PurchaseHistory.aspx" />
+    <Content Include="Product\Services\CheckoutService.aspx" />
+    <Content Include="Product\ShoppingCartModule.ascx" />
+    <Content Include="Product\SearchResults.aspx" />
+    <Content Include="Product\Services\CommentService.asmx" />
+    <Content Include="Product\AdminCP\ShippingMethodEdit.aspx" />
+    <Content Include="Product\AdminCP\ShippingMethods.aspx" />
+    <Content Include="Product\Services\CartService.aspx" />
+    <Content Include="Product\AdminCP\TagBulkEdit.aspx" />
+    <Content Include="Product\AdminCP\OrderList.aspx" />
+    <Content Include="Product\AdminCP\ProductList.aspx" />
+    <Content Include="Product\AdminCP\ProductEdit.aspx" />
+    <Content Include="Product\Controls\AdminProductControl.ascx" />
+    <Content Include="Product\Controls\AdminProductEditControl.ascx" />
+    <Content Include="Product\Controls\CommentControl.ascx" />
+    <Content Include="Product\Controls\OrderDetailToolTipControl.ascx" />
+    <Content Include="Product\Controls\ProductSortBySetting.ascx" />
+    <Content Include="Product\Controls\ParentZoneSetting.ascx" />
+    <Content Include="Product\Controls\ProductDetailTemplatesSetting.ascx" />
+    <Content Include="Product\Controls\ProductPositionSetting.ascx" />
+    <Content Include="Product\Controls\ProductTemplatesSetting.ascx" />
+    <Content Include="Product\Controls\ProductListControl.ascx" />
+    <Content Include="Product\Controls\ProductViewControl.ascx" />
+    <Content Include="Product\Controls\ProductRelatedControl.ascx" />
+    <Content Include="Product\AdminCP\TagList.aspx" />
+    <Content Include="Product\AdminCP\ProductShowOption.aspx" />
+    <Content Include="Product\ProductFilterModule.ascx" />
+    <Content Include="Product\AdminCP\CustomFields.aspx" />
+    <Content Include="Product\AdminCP\CustomFieldEdit.aspx" />
+    <Content Include="Product\AdminCP\ProductSpecial.aspx" />
+    <Content Include="Product\AdminCP\ProductMove.aspx" />
+    <Content Include="Product\ProductSpecialModule.ascx" />
+    <Content Include="Product\ProductDetail.aspx" />
+    <Content Include="Product\ProductModule.ascx" />
+    <Content Include="Product\Services\ProductUrlSuggestService.ashx" />
+    <Content Include="Product\AdminCP\CartList.aspx" />
+    <Content Include="Product\AdminCP\Import\ImportProducts.aspx" />
+    <Content Include="Product\ZoneProductModule.ascx" />
+    <Content Include="Store\AdminCP\ImportInventoryList.aspx" />
+    <Content Include="Store\AdminCP\InventoryList.aspx" />
+    <Content Include="Store\AdminCP\StoreEdit.aspx" />
+    <Content Include="Store\AdminCP\StoreList.aspx" />
+    <Content Include="Store\AdminCP\StorePriority.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AccountMenu.ascx.cs">
+      <DependentUpon>AccountMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AccountMenu.ascx.designer.cs">
+      <DependentUpon>AccountMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Address.aspx.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Address.aspx.designer.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AddressEdit.aspx.cs">
+      <DependentUpon>AddressEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AddressEdit.aspx.designer.cs">
+      <DependentUpon>AddressEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Business\OrderSchedule.cs" />
+    <Compile Include="Account\Business\UserAddress.cs" />
+    <Compile Include="Account\Business\UserNotification.cs" />
+    <Compile Include="Account\Business\UserPoint.cs" />
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Components\AccountHelper.cs" />
+    <Compile Include="Account\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Data\DBOrderSchedule.cs" />
+    <Compile Include="Account\Data\DBUserAddress.cs" />
+    <Compile Include="Account\Data\DBUserNotification.cs" />
+    <Compile Include="Account\Data\DBUserPoint.cs" />
+    <Compile Include="Account\LoginFacebook.aspx.cs">
+      <DependentUpon>LoginFacebook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\LoginFacebook.aspx.designer.cs">
+      <DependentUpon>LoginFacebook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\LoginGooglePlus.aspx.cs">
+      <DependentUpon>LoginGooglePlus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\LoginGooglePlus.aspx.designer.cs">
+      <DependentUpon>LoginGooglePlus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OrderView.aspx.cs">
+      <DependentUpon>OrderView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OrderView.aspx.designer.cs">
+      <DependentUpon>OrderView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ProvinceDistrictSetting.ascx.cs">
+      <DependentUpon>ProvinceDistrictSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ProvinceDistrictSetting.ascx.designer.cs">
+      <DependentUpon>ProvinceDistrictSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RewardHistory.aspx.cs">
+      <DependentUpon>RewardHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RewardHistory.aspx.designer.cs">
+      <DependentUpon>RewardHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UpdatePassword.aspx.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UpdatePassword.aspx.designer.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\AccountResources.designer.cs">
+      <DependentUpon>AccountResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ProductResources.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\StoreResources.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateAchieveTargets.aspx.cs">
+      <DependentUpon>AffiliateAchieveTargets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateAchieveTargets.aspx.designer.cs">
+      <DependentUpon>AffiliateAchieveTargets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateDetail.aspx.cs">
+      <DependentUpon>AffiliateDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateDetail.aspx.designer.cs">
+      <DependentUpon>AffiliateDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateLinkProduct.aspx.cs">
+      <DependentUpon>AffiliateLinkProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateLinkProduct.aspx.designer.cs">
+      <DependentUpon>AffiliateLinkProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateOrderList.aspx.cs">
+      <DependentUpon>AffiliateOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateOrderList.aspx.designer.cs">
+      <DependentUpon>AffiliateOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateWithdrawMoneyList.aspx.cs">
+      <DependentUpon>AffiliateWithdrawMoneyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateWithdrawMoneyList.aspx.designer.cs">
+      <DependentUpon>AffiliateWithdrawMoneyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateWithdrawMoneyListAdmin.aspx.cs">
+      <DependentUpon>AffiliateWithdrawMoneyListAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\AffiliateWithdrawMoneyListAdmin.aspx.designer.cs">
+      <DependentUpon>AffiliateWithdrawMoneyListAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportProductsMeta.aspx.cs">
+      <DependentUpon>ImportProductsMeta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportProductsMeta.aspx.designer.cs">
+      <DependentUpon>ImportProductsMeta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\SysnProductUrls.aspx.cs">
+      <DependentUpon>SysnProductUrls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\SysnProductUrls.aspx.designer.cs">
+      <DependentUpon>SysnProductUrls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\DeleteRedirectUrls.aspx.cs">
+      <DependentUpon>DeleteRedirectUrls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\DeleteRedirectUrls.aspx.designer.cs">
+      <DependentUpon>DeleteRedirectUrls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportRedirectUrl.aspx.cs">
+      <DependentUpon>ImportRedirectUrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportRedirectUrl.aspx.designer.cs">
+      <DependentUpon>ImportRedirectUrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportNewProduct.aspx.cs">
+      <DependentUpon>ImportNewProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportNewProduct.aspx.designer.cs">
+      <DependentUpon>ImportNewProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\DeleteProductsTool.aspx.cs">
+      <DependentUpon>DeleteProductsTool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\DeleteProductsTool.aspx.designer.cs">
+      <DependentUpon>DeleteProductsTool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportManufacturers.aspx.cs">
+      <DependentUpon>ImportManufacturers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportManufacturers.aspx.designer.cs">
+      <DependentUpon>ImportManufacturers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportProductsFixBug.aspx.cs">
+      <DependentUpon>ImportProductsFixBug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportProductsFixBug.aspx.designer.cs">
+      <DependentUpon>ImportProductsFixBug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportProductsCustom.aspx.cs">
+      <DependentUpon>ImportProductsCustom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportProductsCustom.aspx.designer.cs">
+      <DependentUpon>ImportProductsCustom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportUpdateProductPrice.aspx.cs">
+      <DependentUpon>ImportUpdateProductPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportUpdateProductPrice.aspx.designer.cs">
+      <DependentUpon>ImportUpdateProductPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Location\Countries.aspx.cs">
+      <DependentUpon>Countries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Location\Countries.aspx.designer.cs">
+      <DependentUpon>Countries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderAdd.aspx.cs">
+      <DependentUpon>OrderAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderAdd.aspx.designer.cs">
+      <DependentUpon>OrderAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductTypeEdit.aspx.cs">
+      <DependentUpon>ProductTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductTypeEdit.aspx.designer.cs">
+      <DependentUpon>ProductTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductTypeList.aspx.cs">
+      <DependentUpon>ProductTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductTypeList.aspx.designer.cs">
+      <DependentUpon>ProductTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ManufacturerEdit.aspx.cs">
+      <DependentUpon>ManufacturerEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ManufacturerEdit.aspx.designer.cs">
+      <DependentUpon>ManufacturerEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Manufacturers.aspx.cs">
+      <DependentUpon>Manufacturers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Manufacturers.aspx.designer.cs">
+      <DependentUpon>Manufacturers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\CustomerEdit.aspx.cs">
+      <DependentUpon>CustomerEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\CustomerEdit.aspx.designer.cs">
+      <DependentUpon>CustomerEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\CustomersList.aspx.cs">
+      <DependentUpon>CustomersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\CustomersList.aspx.designer.cs">
+      <DependentUpon>CustomersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\MemberRank.aspx.cs">
+      <DependentUpon>MemberRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\MemberRank.aspx.designer.cs">
+      <DependentUpon>MemberRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\MemberRankEdit.aspx.cs">
+      <DependentUpon>MemberRankEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\MemberRankEdit.aspx.designer.cs">
+      <DependentUpon>MemberRankEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\MemberRankView.aspx.cs">
+      <DependentUpon>MemberRankView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Member\MemberRankView.aspx.designer.cs">
+      <DependentUpon>MemberRankView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderAddNewProductDialog.aspx.cs">
+      <DependentUpon>OrderAddNewProductDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderAddNewProductDialog.aspx.designer.cs">
+      <DependentUpon>OrderAddNewProductDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderEdit.aspx.cs">
+      <DependentUpon>OrderEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderEdit.aspx.designer.cs">
+      <DependentUpon>OrderEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderPrint.aspx.cs">
+      <DependentUpon>OrderPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderPrint.aspx.designer.cs">
+      <DependentUpon>OrderPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderTracking.aspx.cs">
+      <DependentUpon>OrderTracking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderTracking.aspx.designer.cs">
+      <DependentUpon>OrderTracking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\PaymentMethodEdit.aspx.cs">
+      <DependentUpon>PaymentMethodEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\PaymentMethodEdit.aspx.designer.cs">
+      <DependentUpon>PaymentMethodEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\PaymentMethods.aspx.cs">
+      <DependentUpon>PaymentMethods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\PaymentMethods.aspx.designer.cs">
+      <DependentUpon>PaymentMethods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductSoldOutLetter.aspx.cs">
+      <DependentUpon>ProductSoldOutLetter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductSoldOutLetter.aspx.designer.cs">
+      <DependentUpon>ProductSoldOutLetter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountCoupons.aspx.cs">
+      <DependentUpon>DiscountCoupons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountCoupons.aspx.designer.cs">
+      <DependentUpon>DiscountCoupons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountGiftDialog.aspx.cs">
+      <DependentUpon>DiscountGiftDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountGiftDialog.aspx.designer.cs">
+      <DependentUpon>DiscountGiftDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountChooseGiftDialog.aspx.cs">
+      <DependentUpon>DiscountChooseGiftDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountChooseGiftDialog.aspx.designer.cs">
+      <DependentUpon>DiscountChooseGiftDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountComboSaleDialog.aspx.cs">
+      <DependentUpon>DiscountComboSaleDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountComboSaleDialog.aspx.designer.cs">
+      <DependentUpon>DiscountComboSaleDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountEdit.aspx.cs">
+      <DependentUpon>DiscountEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountEdit.aspx.designer.cs">
+      <DependentUpon>DiscountEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountProductRangeDialog.aspx.cs">
+      <DependentUpon>DiscountProductRangeDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\DiscountProductRangeDialog.aspx.designer.cs">
+      <DependentUpon>DiscountProductRangeDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\Vouchers.aspx.cs">
+      <DependentUpon>Vouchers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\Vouchers.aspx.designer.cs">
+      <DependentUpon>Vouchers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\Discounts.aspx.cs">
+      <DependentUpon>Discounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Promotions\Discounts.aspx.designer.cs">
+      <DependentUpon>Discounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Reports\BestsellersReport.aspx.cs">
+      <DependentUpon>BestsellersReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Reports\BestsellersReport.aspx.designer.cs">
+      <DependentUpon>BestsellersReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Reports\SalesReport.aspx.cs">
+      <DependentUpon>SalesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Reports\SalesReport.aspx.designer.cs">
+      <DependentUpon>SalesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\RewardPoint\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\RewardPoint\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\RewardPoint\UserPointHistoryList.aspx.cs">
+      <DependentUpon>UserPointHistoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\RewardPoint\UserPointHistoryList.aspx.designer.cs">
+      <DependentUpon>UserPointHistoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\RestrictedShippingList.aspx.cs">
+      <DependentUpon>RestrictedShippingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\RestrictedShippingList.aspx.designer.cs">
+      <DependentUpon>RestrictedShippingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ViettelPost\ShippingLocation.aspx.cs">
+      <DependentUpon>ShippingLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ViettelPost\ShippingLocation.aspx.designer.cs">
+      <DependentUpon>ShippingLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ViettelPost\ViettelPostProvince.aspx.cs">
+      <DependentUpon>ViettelPostProvince.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ViettelPost\ViettelPostProvince.aspx.designer.cs">
+      <DependentUpon>ViettelPostProvince.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Business\Affiliate.cs" />
+    <Compile Include="Product\Business\AffiliatePayment.cs" />
+    <Compile Include="Product\Business\OrderLog.cs" />
+    <Compile Include="Product\Business\Shipping\RestrictedShipping.cs" />
+    <Compile Include="Product\Components\Cache\ShippingCacheHelper.cs" />
+    <Compile Include="Product\Components\Cache\GeoZoneCacheHelper.cs" />
+    <Compile Include="Product\Components\Configurations\CheckoutAddressConfiguration.cs" />
+    <Compile Include="Product\Components\Configurations\CheckoutLoginConfiguration.cs" />
+    <Compile Include="Product\Components\Configurations\CheckoutMethodConfiguration.cs" />
+    <Compile Include="Product\Components\Configurations\DiscountConfiguration.cs" />
+    <Compile Include="Product\Components\Configurations\ManufacturerConfiguration.cs" />
+    <Compile Include="Product\Components\Configurations\ManufacturerDetailConfiguration.cs" />
+    <Compile Include="Product\Components\Configurations\ProductSpecialConfiguration.cs" />
+    <Compile Include="Product\Components\Configurations\PromotionDetailConfiguration.cs" />
+    <Compile Include="Product\Components\Configurations\ShoppingCartConfiguration.cs" />
+    <Compile Include="Product\Components\Configurations\ZoneProductConfiguration.cs" />
+    <Compile Include="Product\Components\Tracking\GoogleTrackingHelper.cs" />
+    <Compile Include="Product\Controls\AdminProductChildControl.ascx.cs">
+      <DependentUpon>AdminProductChildControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\AdminProductChildControl.ascx.designer.cs">
+      <DependentUpon>AdminProductChildControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\AffiliateWithdrawMoneyForm.ascx.cs">
+      <DependentUpon>AffiliateWithdrawMoneyForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\AffiliateWithdrawMoneyForm.ascx.designer.cs">
+      <DependentUpon>AffiliateWithdrawMoneyForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\NewsRelatedControl.ascx.cs">
+      <DependentUpon>NewsRelatedControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\NewsRelatedControl.ascx.designer.cs">
+      <DependentUpon>NewsRelatedControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductHotDealModule.ascx.cs">
+      <DependentUpon>ProductHotDealModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductHotDealModule.ascx.designer.cs">
+      <DependentUpon>ProductHotDealModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductGroupControl.ascx.cs">
+      <DependentUpon>ProductGroupControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductGroupControl.ascx.designer.cs">
+      <DependentUpon>ProductGroupControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Data\DBAffiliate.cs" />
+    <Compile Include="Product\Data\DBAffiliatePayment.cs" />
+    <Compile Include="Product\Data\DBOrderLog.cs" />
+    <Compile Include="Product\Data\Shipping\DBRestrictedShipping.cs" />
+    <Compile Include="Product\ERP\Components\ERPHelper.cs" />
+    <Compile Include="Product\ERP\Handle\ERPRegisterCustomerHandle.cs" />
+    <Compile Include="Product\ERP\Models\MemberModel.cs" />
+    <Compile Include="Product\ERP\Models\AddressModel.cs" />
+    <Compile Include="Product\ERP\Models\OrderItemModel.cs" />
+    <Compile Include="Product\ERP\Models\OrderResponsive.cs" />
+    <Compile Include="Product\ERP\Models\JYSKResponsive.cs" />
+    <Compile Include="Product\ERP\Models\SakuroResponsive.cs" />
+    <Compile Include="Product\ERP\Models\OrderModel.cs" />
+    <Compile Include="Product\ERP\Models\transactionOrderModel.cs" />
+    <Compile Include="Product\ERP\Models\transInfocodeEntryModel.cs" />
+    <Compile Include="Product\ERP\Models\transPaymentEntryModel.cs" />
+    <Compile Include="Product\ERP\Models\MemberPointModel.cs" />
+    <Compile Include="Product\ERP\Models\transSalesEntryModel.cs" />
+    <Compile Include="Product\ERP\Models\CouponModel.cs" />
+    <Compile Include="Product\ERP\Models\VoucherModel.cs" />
+    <Compile Include="Product\Business\Manufacturer.cs" />
+    <Compile Include="Product\Business\Member\MemberRank.cs" />
+    <Compile Include="Product\Business\Member\SiteUserCustom.cs" />
+    <Compile Include="Product\Business\PaymentMethod.cs" />
+    <Compile Include="Product\Business\ProductServicePrice.cs" />
+    <Compile Include="Product\Business\ProductSoldOutLetter.cs" />
+    <Compile Include="Product\Business\ProductType.cs" />
+    <Compile Include="Product\Business\ProductVariant.cs" />
+    <Compile Include="Product\Business\ProductZone.cs" />
+    <Compile Include="Product\Business\Promotions\DiscountContent.cs" />
+    <Compile Include="Product\Business\Promotions\DiscountCoupon.cs" />
+    <Compile Include="Product\Business\Promotions\DiscountRange.cs" />
+    <Compile Include="Product\Business\Promotions\Discount.cs" />
+    <Compile Include="Product\Business\Promotions\DiscountAppliedToItem.cs" />
+    <Compile Include="Product\Business\Promotions\DiscountUsageHistory.cs" />
+    <Compile Include="Product\Business\Promotions\DiscountGift.cs" />
+    <Compile Include="Product\Business\Promotions\Voucher.cs" />
+    <Compile Include="Product\Business\RewardPoints\RewardPointsHistory.cs" />
+    <Compile Include="Product\Business\Shipping\ShippingMethod.cs" />
+    <Compile Include="Product\Business\Shipping\ShippingTableRate.cs" />
+    <Compile Include="Product\Business\Shipping\ViettelPostCode.cs" />
+    <Compile Include="Product\Business\Shipping\ViettelPostProvince.cs" />
+    <Compile Include="Product\Business\Tag.cs" />
+    <Compile Include="Product\Business\TagItem.cs" />
+    <Compile Include="Product\Components\Cache\DiscountAppliedToItemHelper.cs" />
+    <Compile Include="Product\Components\Cache\ManufacturerCacheHelper.cs" />
+    <Compile Include="Product\Components\Cache\ProductTypeCacheHelper.cs" />
+    <Compile Include="Product\Components\Cache\StoreCacheHelper.cs" />
+    <Compile Include="Product\Components\Cache\WishlistCacheHelper.cs" />
+    <Compile Include="Product\Components\Cache\ProductCacheHelper.cs" />
+    <Compile Include="Product\Compare.aspx.cs">
+      <DependentUpon>Compare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Compare.aspx.designer.cs">
+      <DependentUpon>Compare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Components\Helpers\Member\MemberHelper.cs" />
+    <Compile Include="Product\Components\Helpers\Product\ProductServiceHelper.cs" />
+    <Compile Include="Product\Components\Helpers\RewardPoints\RewardPointsHelper.cs" />
+    <Compile Include="Product\Shipment\AhaMove\AhaMoveHelper.cs" />
+    <Compile Include="Product\Shipment\AhaMove\Models\AhaMoveResponse.cs" />
+    <Compile Include="Product\Shipment\DHL\Models\DHLResponse.cs" />
+    <Compile Include="Product\Shipment\DHL\Models\AccessTokenResponse.cs" />
+    <Compile Include="Product\Shipment\DHL\DHLHelper.cs" />
+    <Compile Include="Product\Components\Helpers\Shipping\ServiceInfo.cs" />
+    <Compile Include="Product\Components\Helpers\Shipping\ShippingHelper.cs" />
+    <Compile Include="Product\Components\Helpers\Shipping\ShippingOption.cs" />
+    <Compile Include="Product\Components\DisplaySettings\CartDisplaySettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Product\Components\Helpers\Product\CommentHelper.cs" />
+    <Compile Include="Product\Components\Helpers\Shopping\VoucherHelper.cs" />
+    <Compile Include="Product\Components\Helpers\Shopping\CouponHelper.cs" />
+    <Compile Include="Product\Shipment\Ninjavan\NinjavanHelper.cs" />
+    <Compile Include="Product\Components\Helpers\Shopping\PaymentHelper.cs" />
+    <Compile Include="Product\Components\DisplaySettings\PromotionDisplaySettings.cs" />
+    <Compile Include="Product\Components\DisplaySettings\ManufacturerDisplaySettings.cs" />
+    <Compile Include="Product\Components\Helpers\Product\ManufacturerHelper.cs" />
+    <Compile Include="Product\Components\Helpers\Shopping\OrderHelper.cs" />
+    <Compile Include="Product\Components\Helpers\Product\ProductAttributeParser.cs" />
+    <Compile Include="Product\Components\Helpers\Shopping\PromotionsHelper.cs" />
+    <Compile Include="Product\Shipment\ViettelPost\Models\ViettelPostCalculateResponse.cs" />
+    <Compile Include="Product\Shipment\ViettelPost\Models\ViettelPostOrderItem.cs" />
+    <Compile Include="Product\Shipment\ViettelPost\Models\ViettelPostResponse.cs" />
+    <Compile Include="Product\Shipment\ViettelPost\Models\ViettelPostResponseV2.cs" />
+    <Compile Include="Product\Shipment\ViettelPost\Models\ViettelPostServiceGetPrice.cs" />
+    <Compile Include="Product\Shipment\ViettelPost\Models\ViettelPostServiceInfo.cs" />
+    <Compile Include="Product\Shipment\ViettelPost\ViettelPostHelper.cs" />
+    <Compile Include="Product\Controls\CheckoutZonesSetting.ascx.cs">
+      <DependentUpon>CheckoutZonesSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\CheckoutZonesSetting.ascx.designer.cs">
+      <DependentUpon>CheckoutZonesSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductSoldOutletterControl.ascx.cs">
+      <DependentUpon>ProductSoldOutletterControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductSoldOutletterControl.ascx.designer.cs">
+      <DependentUpon>ProductSoldOutletterControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ParentZonesSetting.ascx.cs">
+      <DependentUpon>ParentZonesSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ParentZonesSetting.ascx.designer.cs">
+      <DependentUpon>ParentZonesSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ShoppingCartLink.cs" />
+    <Compile Include="Product\CheckoutAddressModule.ascx.cs">
+      <DependentUpon>CheckoutAddressModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\CheckoutAddressModule.ascx.designer.cs">
+      <DependentUpon>CheckoutAddressModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\CheckoutLoginModule.ascx.cs">
+      <DependentUpon>CheckoutLoginModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\CheckoutLoginModule.ascx.designer.cs">
+      <DependentUpon>CheckoutLoginModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\CheckoutMethodModule.ascx.cs">
+      <DependentUpon>CheckoutMethodModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\CheckoutMethodModule.ascx.designer.cs">
+      <DependentUpon>CheckoutMethodModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\CheckoutCompletedModule.ascx.cs">
+      <DependentUpon>CheckoutCompletedModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\CheckoutCompletedModule.ascx.designer.cs">
+      <DependentUpon>CheckoutCompletedModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\PromotionLoadTypeSetting.ascx.cs">
+      <DependentUpon>PromotionLoadTypeSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\PromotionLoadTypeSetting.ascx.designer.cs">
+      <DependentUpon>PromotionLoadTypeSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Data\DBProductServicePrice.cs" />
+    <Compile Include="Product\Data\DBProductSoldOutLetter.cs" />
+    <Compile Include="Product\Data\DBProductType.cs" />
+    <Compile Include="Product\Data\DBProductZone.cs" />
+    <Compile Include="Product\Data\Member\DBMemberRank.cs" />
+    <Compile Include="Product\Data\Member\DBSiteUserCustom.cs" />
+    <Compile Include="Product\Data\Promotions\DBDiscountCoupon.cs" />
+    <Compile Include="Product\Data\Promotions\DBDiscountRange.cs" />
+    <Compile Include="Product\Data\Promotions\DBDiscountContent.cs" />
+    <Compile Include="Product\Data\Promotions\DBDiscountGift.cs" />
+    <Compile Include="Product\Data\Promotions\DBVoucher.cs" />
+    <Compile Include="Product\Data\RewardPoints\DBRewardPointsHistory.cs" />
+    <Compile Include="Product\Data\Shipping\DBViettelPostCode.cs" />
+    <Compile Include="Product\Data\Shipping\DBViettelPostProvince.cs" />
+    <Compile Include="Product\Components\Extensions\ProductExtensions.cs" />
+    <Compile Include="Product\Feed\GoogleShoppingFeed.ashx.cs">
+      <DependentUpon>GoogleShoppingFeed.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\Momo\Components\MomoHelper.cs" />
+    <Compile Include="Product\Payments\Momo\Components\MoMoRequestObject.cs" />
+    <Compile Include="Product\Payments\Momo\Components\MomoResponsePayment.cs" />
+    <Compile Include="Product\Payments\Momo\MoMoIPN.aspx.cs">
+      <DependentUpon>MoMoIPN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\Momo\MoMoIPN.aspx.designer.cs">
+      <DependentUpon>MoMoIPN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\Momo\MoMoRedirect.aspx.cs">
+      <DependentUpon>MoMoRedirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\Momo\MoMoRedirect.aspx.designer.cs">
+      <DependentUpon>MoMoRedirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\NganLuong\AlepayCallback.aspx.cs">
+      <DependentUpon>AlepayCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\NganLuong\AlepayCallback.aspx.designer.cs">
+      <DependentUpon>AlepayCallback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\NganLuong\Alepay\AlepayApi.cs" />
+    <Compile Include="Product\Payments\NganLuong\Alepay\AlepayHelper.cs" />
+    <Compile Include="Product\Payments\NganLuong\Alepay\Crypter.cs" />
+    <Compile Include="Product\Payments\NganLuong\Alepay\Encryption.cs" />
+    <Compile Include="Product\Payments\NganLuong\Alepay\TickDateTimeConverter.cs" />
+    <Compile Include="Product\Payments\NganLuong\NganLuongApiV3.cs" />
+    <Compile Include="Product\Payments\NganLuong\NganLuongHelper.cs" />
+    <Compile Include="Product\Payments\NganLuong\Result.aspx.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\NganLuong\Result.aspx.designer.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\Payoo\Callback.aspx.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\Payoo\Callback.aspx.designer.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\Payoo\Callbackipn.aspx.cs">
+      <DependentUpon>Callbackipn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\Payoo\Callbackipn.aspx.designer.cs">
+      <DependentUpon>Callbackipn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\Payoo\Components\PaymentXMLFactory.cs" />
+    <Compile Include="Product\Payments\Payoo\Components\PayooHelper.cs" />
+    <Compile Include="Product\Payments\Payoo\Models\PaymentNotification.cs" />
+    <Compile Include="Product\Payments\Payoo\Models\PayooConnectionPackage.cs" />
+    <Compile Include="Product\Payments\Payoo\Models\PayooOrderModel.cs" />
+    <Compile Include="Product\ProductSiteMap.ashx.cs">
+      <DependentUpon>ProductSiteMap.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Promotion.aspx.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Promotion.aspx.designer.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\PromotionDetailModule.ascx.cs">
+      <DependentUpon>PromotionDetailModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\PromotionDetailModule.ascx.designer.cs">
+      <DependentUpon>PromotionDetailModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ManufacturerDetailModule.ascx.cs">
+      <DependentUpon>ManufacturerDetailModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ManufacturerDetailModule.ascx.designer.cs">
+      <DependentUpon>ManufacturerDetailModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Manufacturer.aspx.cs">
+      <DependentUpon>Manufacturer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Manufacturer.aspx.designer.cs">
+      <DependentUpon>Manufacturer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ManufacturerModule.ascx.cs">
+      <DependentUpon>ManufacturerModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ManufacturerModule.ascx.designer.cs">
+      <DependentUpon>ManufacturerModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Data\DBManufacturer.cs" />
+    <Compile Include="Product\Services\OrderPrint.ashx.cs">
+      <DependentUpon>OrderPrint.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Services\OrderService.aspx.cs">
+      <DependentUpon>OrderService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Services\ProductService.aspx.cs">
+      <DependentUpon>ProductService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\PromotionModule.ascx.cs">
+      <DependentUpon>PromotionModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\PromotionModule.ascx.designer.cs">
+      <DependentUpon>PromotionModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Shipment\ViettelPost\Models\ViettelPostWebhookModel.cs" />
+    <Compile Include="Product\Shipment\ViettelPost\Webhook.aspx.cs">
+      <DependentUpon>Webhook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Shipment\ViettelPost\Webhook.aspx.designer.cs">
+      <DependentUpon>Webhook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\VNPay\Callback.aspx.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\VNPay\Callback.aspx.designer.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\VNPay\Callbackipn.aspx.cs">
+      <DependentUpon>Callbackipn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\VNPay\Callbackipn.aspx.designer.cs">
+      <DependentUpon>Callbackipn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\VNPay\Components\VNPAYHelper.cs" />
+    <Compile Include="Product\Payments\VNPay\Components\VnPayLibrary.cs" />
+    <Compile Include="Product\Wishlist.aspx.cs">
+      <DependentUpon>Wishlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Wishlist.aspx.designer.cs">
+      <DependentUpon>Wishlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Data\DBPaymentMethod.cs" />
+    <Compile Include="Product\Data\DBProductVariant.cs" />
+    <Compile Include="Product\Data\Promotions\DBDiscount.cs" />
+    <Compile Include="Product\Data\Promotions\DBDiscountAppliedToItem.cs" />
+    <Compile Include="Product\Data\Promotions\DBDiscountUsageHistory.cs" />
+    <Compile Include="Product\Payments\OnePay\Callback.aspx.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\OnePay\Callback.aspx.designer.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\OnePay\CallbackIPN.aspx.cs">
+      <DependentUpon>CallbackIPN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Payments\OnePay\CallbackIPN.aspx.designer.cs">
+      <DependentUpon>CallbackIPN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Payments\OnePay\Components\OnePayHelper.cs" />
+    <Compile Include="Product\Payments\OnePay\Components\VPCRequest.cs" />
+    <Compile Include="Product\PurchaseHistory.aspx.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\PurchaseHistory.aspx.designer.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Services\CheckoutService.aspx.cs">
+      <DependentUpon>CheckoutService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ShoppingCartModule.ascx.cs">
+      <DependentUpon>ShoppingCartModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ShoppingCartModule.ascx.designer.cs">
+      <DependentUpon>ShoppingCartModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Data\Shipping\DBShippingMethod.cs" />
+    <Compile Include="Product\Data\Shipping\DBShippingTableRate.cs" />
+    <Compile Include="Product\AdminCP\ReviewList.aspx.cs">
+      <DependentUpon>ReviewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ReviewList.aspx.designer.cs">
+      <DependentUpon>ReviewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ReviewEdit.aspx.cs">
+      <DependentUpon>ReviewEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ReviewEdit.aspx.designer.cs">
+      <DependentUpon>ReviewEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\SearchResults.aspx.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\SearchResults.aspx.designer.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Services\CommentService.asmx.cs">
+      <DependentUpon>CommentService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Product\Services\CartService.aspx.cs">
+      <DependentUpon>CartService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Services\SearchCountResult.ashx.cs">
+      <DependentUpon>SearchCountResult.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ShippingMethodEdit.aspx.cs">
+      <DependentUpon>ShippingMethodEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ShippingMethodEdit.aspx.designer.cs">
+      <DependentUpon>ShippingMethodEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ShippingMethods.aspx.cs">
+      <DependentUpon>ShippingMethods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ShippingMethods.aspx.designer.cs">
+      <DependentUpon>ShippingMethods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Data\DBTag.cs" />
+    <Compile Include="Product\Data\DBTagItem.cs" />
+    <Compile Include="Product\AdminCP\TagBulkEdit.aspx.cs">
+      <DependentUpon>TagBulkEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\TagBulkEdit.aspx.designer.cs">
+      <DependentUpon>TagBulkEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderList.aspx.cs">
+      <DependentUpon>OrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\OrderList.aspx.designer.cs">
+      <DependentUpon>OrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductEdit.aspx.cs">
+      <DependentUpon>ProductEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductEdit.aspx.designer.cs">
+      <DependentUpon>ProductEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Business\ProductComment.cs" />
+    <Compile Include="Product\Business\CustomFieldOption.cs" />
+    <Compile Include="Product\Business\CustomField.cs" />
+    <Compile Include="Product\Business\OrderItem.cs" />
+    <Compile Include="Product\Business\Order.cs" />
+    <Compile Include="Product\Business\ProductProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Product\Business\ProductSortingEnum.cs" />
+    <Compile Include="Product\Business\ShoppingCartItem.cs" />
+    <Compile Include="Product\Business\Product.cs" />
+    <Compile Include="Product\Components\Providers\ProductIndexBuilderProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Product\Components\Configurations\ProductConfiguration.cs" />
+    <Compile Include="Product\Components\DisplaySettings\ProductDisplaySettings.cs" />
+    <Compile Include="Product\Components\Helpers\Product\ProductHelper.cs" />
+    <Compile Include="Product\Components\Permissions\ProductPermission.cs" />
+    <Compile Include="Product\Components\Handlers\SitePreDeleteProductHandler.cs" />
+    <Compile Include="Product\Components\Helpers\Shopping\CartHelper.cs" />
+    <Compile Include="Product\Components\Helpers\Product\CustomFieldHelper.cs" />
+    <Compile Include="Product\Controls\AdminProductControl.ascx.cs">
+      <DependentUpon>AdminProductControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\AdminProductControl.ascx.designer.cs">
+      <DependentUpon>AdminProductControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\AdminProductEditControl.ascx.cs">
+      <DependentUpon>AdminProductEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\AdminProductEditControl.ascx.designer.cs">
+      <DependentUpon>AdminProductEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\CommentControl.ascx.cs">
+      <DependentUpon>CommentControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\CommentControl.ascx.designer.cs">
+      <DependentUpon>CommentControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\OrderDetailToolTipControl.ascx.cs">
+      <DependentUpon>OrderDetailToolTipControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\OrderDetailToolTipControl.ascx.designer.cs">
+      <DependentUpon>OrderDetailToolTipControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductSortBySetting.ascx.cs">
+      <DependentUpon>ProductSortBySetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductSortBySetting.ascx.designer.cs">
+      <DependentUpon>ProductSortBySetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ParentZoneSetting.ascx.cs">
+      <DependentUpon>ParentZoneSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ParentZoneSetting.ascx.designer.cs">
+      <DependentUpon>ParentZoneSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductDetailTemplatesSetting.ascx.cs">
+      <DependentUpon>ProductDetailTemplatesSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductDetailTemplatesSetting.ascx.designer.cs">
+      <DependentUpon>ProductDetailTemplatesSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductPositionSetting.ascx.cs">
+      <DependentUpon>ProductPositionSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductPositionSetting.ascx.designer.cs">
+      <DependentUpon>ProductPositionSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductTemplatesSetting.ascx.cs">
+      <DependentUpon>ProductTemplatesSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductTemplatesSetting.ascx.designer.cs">
+      <DependentUpon>ProductTemplatesSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductListControl.ascx.cs">
+      <DependentUpon>ProductListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductListControl.ascx.designer.cs">
+      <DependentUpon>ProductListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductViewControl.ascx.cs">
+      <DependentUpon>ProductViewControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductViewControl.ascx.designer.cs">
+      <DependentUpon>ProductViewControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Controls\ProductRelatedControl.ascx.cs">
+      <DependentUpon>ProductRelatedControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Controls\ProductRelatedControl.ascx.designer.cs">
+      <DependentUpon>ProductRelatedControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Services\SuggestSearch.ashx.cs">
+      <DependentUpon>SuggestSearch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\TagList.aspx.cs">
+      <DependentUpon>TagList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\TagList.aspx.designer.cs">
+      <DependentUpon>TagList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductShowOption.aspx.cs">
+      <DependentUpon>ProductShowOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductShowOption.aspx.designer.cs">
+      <DependentUpon>ProductShowOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Data\DBProductComment.cs" />
+    <Compile Include="Product\ProductFilterModule.ascx.cs">
+      <DependentUpon>ProductFilterModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ProductFilterModule.ascx.designer.cs">
+      <DependentUpon>ProductFilterModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\CustomFields.aspx.cs">
+      <DependentUpon>CustomFields.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\CustomFields.aspx.designer.cs">
+      <DependentUpon>CustomFields.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Data\DBCustomFieldOption.cs" />
+    <Compile Include="Product\Data\DBCustomField.cs" />
+    <Compile Include="Product\Data\DBOrderItem.cs" />
+    <Compile Include="Product\Data\DBOrder.cs" />
+    <Compile Include="Product\Data\DBProductProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Product\Data\DBShoppingCartItem.cs" />
+    <Compile Include="Product\Data\DBProduct.cs" />
+    <Compile Include="Product\AdminCP\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\CustomFieldEdit.aspx.cs">
+      <DependentUpon>CustomFieldEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\CustomFieldEdit.aspx.designer.cs">
+      <DependentUpon>CustomFieldEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductSpecial.aspx.cs">
+      <DependentUpon>ProductSpecial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductSpecial.aspx.designer.cs">
+      <DependentUpon>ProductSpecial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductMove.aspx.cs">
+      <DependentUpon>ProductMove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\ProductMove.aspx.designer.cs">
+      <DependentUpon>ProductMove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ProductSpecialModule.ascx.cs">
+      <DependentUpon>ProductSpecialModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ProductSpecialModule.ascx.designer.cs">
+      <DependentUpon>ProductSpecialModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ProductModule.ascx.cs">
+      <DependentUpon>ProductModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ProductModule.ascx.designer.cs">
+      <DependentUpon>ProductModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Services\CompareService.ashx.cs">
+      <DependentUpon>CompareService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Services\ProductUrlSuggestService.ashx.cs">
+      <DependentUpon>ProductUrlSuggestService.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\CartList.aspx.cs">
+      <DependentUpon>CartList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\CartList.aspx.designer.cs">
+      <DependentUpon>CartList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportProducts.aspx.cs">
+      <DependentUpon>ImportProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\AdminCP\Import\ImportProducts.aspx.designer.cs">
+      <DependentUpon>ImportProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ZoneProductModule.ascx.cs">
+      <DependentUpon>ZoneProductModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ZoneProductModule.ascx.designer.cs">
+      <DependentUpon>ZoneProductModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Store\AdminCP\ImportInventoryList.aspx.cs">
+      <DependentUpon>ImportInventoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store\AdminCP\ImportInventoryList.aspx.designer.cs">
+      <DependentUpon>ImportInventoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Store\AdminCP\InventoryList.aspx.cs">
+      <DependentUpon>InventoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store\AdminCP\InventoryList.aspx.designer.cs">
+      <DependentUpon>InventoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Store\AdminCP\StoreEdit.aspx.cs">
+      <DependentUpon>StoreEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store\AdminCP\StoreEdit.aspx.designer.cs">
+      <DependentUpon>StoreEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Store\AdminCP\StoreList.aspx.cs">
+      <DependentUpon>StoreList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store\AdminCP\StoreList.aspx.designer.cs">
+      <DependentUpon>StoreList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Store\AdminCP\StorePriority.aspx.cs">
+      <DependentUpon>StorePriority.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store\AdminCP\StorePriority.aspx.designer.cs">
+      <DependentUpon>StorePriority.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Store\Business\StockInventory.cs" />
+    <Compile Include="Store\Business\Store.cs" />
+    <Compile Include="Store\Components\StoreHelper.cs" />
+    <Compile Include="Store\Data\DBStockInventory.cs" />
+    <Compile Include="Store\Data\DBStore.cs" />
+    <Compile Include="Store\Model\StockInventoryModel.cs" />
+    <Compile Include="Store\Model\ValidateInventoryModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Product\Services\CompareService.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Product\Services\SuggestSearch.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Product\Services\SearchCountResult.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\AccountResources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>AccountResources.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\StoreResources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>StoreResources.designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Product\Services\OrderPrint.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Product\Shipment\Ninjavan\Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Product\ProductSiteMap.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Product\Feed\GoogleShoppingFeed.ashx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4267</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /s /y /d "$(ProjectDir)bin\CanhCam.Features.Product.dll" "$(SolutionDir)Published\bin\"
+xcopy /s /y /d "$(ProjectDir)App_GlobalResources\*.resx" "$(SolutionDir)Published\App_GlobalResources\"
+
+xcopy /s /y /d "$(ProjectDir)Product\*.aspx" "$(SolutionDir)Published\Product\"
+xcopy /s /y /d "$(ProjectDir)Product\*.ascx" "$(SolutionDir)Published\Product\"
+xcopy /s /y /d "$(ProjectDir)Product\*.ashx" "$(SolutionDir)Published\Product\"
+
+xcopy /s /y /d "$(ProjectDir)Account\*.aspx" "$(SolutionDir)Published\Account\"
+xcopy /s /y /d "$(ProjectDir)Account\*.ascx" "$(SolutionDir)Published\Account\"
+
+xcopy /s /y /d "$(ProjectDir)Store\*.aspx" "$(SolutionDir)Published\Store\"
+xcopy /s /y /d "$(ProjectDir)Store\*.ascx" "$(SolutionDir)Published\Store\"
+xcopy /s /y /d "$(ProjectDir)Store\*.ashx" "$(SolutionDir)Published\Store\"</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+</Project>

@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" CodeBehind="RecruitmentUrlSuggestService.ashx.cs" Class="CanhCam.Web.RecruitmentUI.RecruitmentUrlSuggestService" %>

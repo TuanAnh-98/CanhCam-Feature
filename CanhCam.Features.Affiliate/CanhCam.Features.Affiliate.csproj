@@ -1,0 +1,505 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14C1A42F-DA78-4557-8F4D-4BC8CCD89A0F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CanhCam.Features.Affiliate</RootNamespace>
+    <AssemblyName>CanhCam.Features.Affiliate</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44340</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Argotic.Common">
+      <HintPath>..\Published\bin\Argotic.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Core">
+      <HintPath>..\Published\bin\Argotic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Extensions">
+      <HintPath>..\Published\bin\Argotic.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\Published\bin\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Brettle.Web.NeatHtml">
+      <HintPath>..\Published\bin\Brettle.Web.NeatHtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Brettle.Web.NeatHtmlTools">
+      <HintPath>..\Published\bin\Brettle.Web.NeatHtmlTools.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Business">
+      <HintPath>..\Published\bin\CanhCam.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Business.WebHelpers">
+      <HintPath>..\Published\bin\CanhCam.Business.WebHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Data">
+      <HintPath>..\Published\bin\CanhCam.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.Banner">
+      <HintPath>..\Published\bin\CanhCam.Features.Banner.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.ContactForm">
+      <HintPath>..\Published\bin\CanhCam.Features.ContactForm.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.Custom">
+      <HintPath>..\Published\bin\CanhCam.Features.Custom.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.DealerLocator">
+      <HintPath>..\Published\bin\CanhCam.Features.DealerLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.Facebook">
+      <HintPath>..\Published\bin\CanhCam.Features.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.FAQs">
+      <HintPath>..\Published\bin\CanhCam.Features.FAQs.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.FormWizard">
+      <HintPath>..\Published\bin\CanhCam.Features.FormWizard.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.ImageGallery">
+      <HintPath>..\Published\bin\CanhCam.Features.ImageGallery.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.News">
+      <HintPath>..\Published\bin\CanhCam.Features.News.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.Poll">
+      <HintPath>..\Published\bin\CanhCam.Features.Poll.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.Popup">
+      <HintPath>..\Published\bin\CanhCam.Features.Popup.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.Product">
+      <HintPath>..\Published\bin\CanhCam.Features.Product.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.Recruitment">
+      <HintPath>..\Published\bin\CanhCam.Features.Recruitment.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.SharedFiles">
+      <HintPath>..\Published\bin\CanhCam.Features.SharedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.SocialShop">
+      <HintPath>..\Published\bin\CanhCam.Features.SocialShop.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Features.VideoPlayer">
+      <HintPath>..\Published\bin\CanhCam.Features.VideoPlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Net">
+      <HintPath>..\Published\bin\CanhCam.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.SiteImageService">
+      <HintPath>..\Published\bin\CanhCam.SiteImageService.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Web">
+      <HintPath>..\Published\bin\CanhCam.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Web.Controls">
+      <HintPath>..\Published\bin\CanhCam.Web.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Web.Editor">
+      <HintPath>..\Published\bin\CanhCam.Web.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Web.Framework">
+      <HintPath>..\Published\bin\CanhCam.Web.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CanhCam.Web.Utilities">
+      <HintPath>..\Published\bin\CanhCam.Web.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeSmith.ActiproSoftware.Text.Addons.DotNet.Wpf, Version=117.1.651.0, Culture=neutral, PublicKeyToken=9fd61cdb91609a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeSmith.Generator.8.0.0\lib\net462\CodeSmith.ActiproSoftware.Text.Addons.DotNet.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeSmith.ActiproSoftware.Text.LLParser.Wpf, Version=117.1.651.0, Culture=neutral, PublicKeyToken=9fd61cdb91609a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeSmith.Generator.8.0.0\lib\net462\CodeSmith.ActiproSoftware.Text.LLParser.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeSmith.ActiproSoftware.Text.Wpf, Version=117.1.651.0, Culture=neutral, PublicKeyToken=9fd61cdb91609a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeSmith.Generator.8.0.0\lib\net462\CodeSmith.ActiproSoftware.Text.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeSmith.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=9fd61cdb91609a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeSmith.Generator.8.0.0\lib\net462\CodeSmith.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeSmith.Engine, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fd61cdb91609a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeSmith.Generator.8.0.0\lib\net462\CodeSmith.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CSSFriendly">
+      <HintPath>..\Published\bin\CSSFriendly.dll</HintPath>
+    </Reference>
+    <Reference Include="dotless.Core">
+      <HintPath>..\Published\bin\dotless.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth">
+      <HintPath>..\Published\bin\DotNetOpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="GCheckout">
+      <HintPath>..\Published\bin\GCheckout.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Analytics">
+      <HintPath>..\Published\bin\Google.GData.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client">
+      <HintPath>..\Published\bin\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions">
+      <HintPath>..\Published\bin\Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Published\bin\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlDiff">
+      <HintPath>..\Published\bin\HtmlDiff.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Published\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Job">
+      <HintPath>..\Published\bin\Job.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Published\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\Published\bin\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Analyzers">
+      <HintPath>..\Published\bin\Lucene.Net.Contrib.Analyzers.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Core">
+      <HintPath>..\Published\bin\Lucene.Net.Contrib.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.FastVectorHighlighter">
+      <HintPath>..\Published\bin\Lucene.Net.Contrib.FastVectorHighlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Highlighter">
+      <HintPath>..\Published\bin\Lucene.Net.Contrib.Highlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Memory">
+      <HintPath>..\Published\bin\Lucene.Net.Contrib.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Queries">
+      <HintPath>..\Published\bin\Lucene.Net.Contrib.Queries.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.SimpleFacetedSearch">
+      <HintPath>..\Published\bin\Lucene.Net.Contrib.SimpleFacetedSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Snowball">
+      <HintPath>..\Published\bin\Lucene.Net.Contrib.Snowball.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.SpellChecker">
+      <HintPath>..\Published\bin\Lucene.Net.Contrib.SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="MetaDataExtractor">
+      <HintPath>..\Published\bin\MetaDataExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Client">
+      <HintPath>..\Published\bin\Microsoft.ApplicationServer.Caching.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Core">
+      <HintPath>..\Published\bin\Microsoft.ApplicationServer.Caching.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.DistributedCache">
+      <HintPath>..\Published\bin\Microsoft.Web.DistributedCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\Published\bin\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Preview">
+      <HintPath>..\Published\bin\Microsoft.Web.Preview.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsFabric.Common">
+      <HintPath>..\Published\bin\Microsoft.WindowsFabric.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsFabric.Data.Common">
+      <HintPath>..\Published\bin\Microsoft.WindowsFabric.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\Published\bin\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Published\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Novell.Directory.Ldap">
+      <HintPath>..\Published\bin\Novell.Directory.Ldap.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Published\bin\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="policy.1.0.CodeSmith.Core, Version=8.0.0.15444, Culture=neutral, PublicKeyToken=9fd61cdb91609a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeSmith.Generator.8.0.0\lib\net462\policy.1.0.CodeSmith.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha">
+      <HintPath>..\Published\bin\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\Published\bin\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders">
+      <HintPath>..\Published\bin\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="Subkismet">
+      <HintPath>..\Published\bin\Subkismet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\Published\bin\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\Published\bin\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\Published\bin\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\Published\bin\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment">
+      <HintPath>..\Published\bin\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor">
+      <HintPath>..\Published\bin\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\Published\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\Published\bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="TimelineNet">
+      <HintPath>..\Published\bin\TimelineNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Affiliate\Admincp\AddProduct.aspx" />
+    <Content Include="Affiliate\Admincp\AffiliateDetail.aspx" />
+    <Content Include="Affiliate\Admincp\AffiliateLinkProduct.aspx" />
+    <Content Include="Affiliate\Admincp\AffiliateList.aspx" />
+    <Content Include="Affiliate\Admincp\AffiliateOrderList.aspx" />
+    <Content Include="Affiliate\Admincp\AffiliateOrderDetail.aspx" />
+    <Content Include="Affiliate\Admincp\AffiliateProductList.aspx" />
+    <Content Include="Affiliate\Controls\NhanVienOffer.ascx" />
+    <Content Include="Affiliate\Controls\ProductViewControl.ascx" />
+    <Content Include="Affiliate\Controls\ProductListControl.ascx" />
+    <Content Include="Affiliate\NhanVienOffer.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Affiliate\Admincp\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateDetail.aspx.cs">
+      <DependentUpon>AffiliateDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateDetail.aspx.designer.cs">
+      <DependentUpon>AffiliateDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateLinkProduct.aspx.cs">
+      <DependentUpon>AffiliateLinkProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateLinkProduct.aspx.designer.cs">
+      <DependentUpon>AffiliateLinkProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateList.aspx.cs">
+      <DependentUpon>AffiliateList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateList.aspx.designer.cs">
+      <DependentUpon>AffiliateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateOrderList.aspx.cs">
+      <DependentUpon>AffiliateOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateOrderList.aspx.designer.cs">
+      <DependentUpon>AffiliateOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateOrderDetail.aspx.cs">
+      <DependentUpon>AffiliateOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateOrderDetail.aspx.designer.cs">
+      <DependentUpon>AffiliateOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateProductList.aspx.cs">
+      <DependentUpon>AffiliateProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Admincp\AffiliateProductList.aspx.designer.cs">
+      <DependentUpon>AffiliateProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Business\AffiliateOrder.cs" />
+    <Compile Include="Affiliate\Business\AffiliateProduct.cs" />
+    <Compile Include="Affiliate\Controls\NhanVienOffer.ascx.cs">
+      <DependentUpon>NhanVienOffer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Controls\NhanVienOffer.ascx.designer.cs">
+      <DependentUpon>NhanVienOffer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Controls\ProductViewControl.ascx.cs">
+      <DependentUpon>ProductViewControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Controls\ProductViewControl.ascx.designer.cs">
+      <DependentUpon>ProductViewControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Controls\ProductListControl.ascx.cs">
+      <DependentUpon>ProductListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\Controls\ProductListControl.ascx.designer.cs">
+      <DependentUpon>ProductListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Data\DBAffiliateOrder.cs" />
+    <Compile Include="Affiliate\Data\DBAffiliateProduct.cs" />
+    <Compile Include="Affiliate\NhanVienOffer.aspx.cs">
+      <DependentUpon>NhanVienOffer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate\NhanVienOffer.aspx.designer.cs">
+      <DependentUpon>NhanVienOffer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliate\Business\Affiliate.cs" />
+    <Compile Include="Affiliate\Business\AffiliateUser.cs" />
+    <Compile Include="Affiliate\Components\AffiliatePermission.cs" />
+    <Compile Include="Affiliate\Data\DBAffiliate.cs" />
+    <Compile Include="Affiliate\Data\DBAffiliateUser.cs" />
+    <Compile Include="App_GlobalResources\CustomResources.designer.cs">
+      <DependentUpon>CustomResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\CustomResources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CustomResources.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65071</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44340/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /s /y /d "$(ProjectDir)bin\CanhCam.Features.Affiliate.dll" "$(SolutionDir)Published\bin\"
+xcopy /s /y /d "$(ProjectDir)App_GlobalResources\*.resx" "$(SolutionDir)Published\App_GlobalResources\"
+
+xcopy /s /y /d "$(ProjectDir)\Affiliate\*.aspx" "$(SolutionDir)Published\Affiliate\"
+xcopy /s /y /d "$(ProjectDir)\Affiliate\*.ascx" "$(SolutionDir)Published\Affiliate\"
+xcopy /s /y /d "$(ProjectDir)\Affiliate\*.ashx" "$(SolutionDir)Published\Affiliate\"</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="CanhCam.Web.layout" %>
+
+<%@ Register TagPrefix="portal" TagName="TopPane" Src="~/Controls/Admin/TopPane.ascx" %>
+<%@ Register TagPrefix="portal" TagName="LeftPane" Src="~/Controls/Admin/LeftPane.ascx" %>
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <title></title>
+    <portal:MetaContent ID="MetaContent" runat="server" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/App_Themes/adminskin/img/favicon.png" />
+    <link rel="stylesheet" href="/App_Themes/adminskin/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/App_Themes/adminskin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="/App_Themes/adminskin/css/adminlte.min.css">
+    <link rel="stylesheet" href="/App_Themes/adminskin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="/App_Themes/adminskin/css/global.css">
+
+    <%--<portal:ScriptLoader ID="ScriptLoader1" IncludeFancyBox="true" runat="server" />--%>
+
+    <!-- jQuery -->
+    <script src="/App_Themes/adminskin/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="/App_Themes/adminskin/plugins/jquery-ui/jquery-ui.min.js"></script>
+</head>
+<body id="Body" class="hold-transition sidebar-mini layout-fixed" runat="server">
+    <form id="frmMain" runat="server">
+        <asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+        <asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+        <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+        <div class="wrapper">
+            <portal:TopPane ID="TopPane1" runat="server" />
+            <portal:LeftPane ID="LeftPane1" runat="server" />
+            <div class="content-wrapper">
+                <section class="content">
+                    <div class="container-fluid">
+                        <asp:Panel ID="divAlt1" runat="server" CssClass="altcontent1">
+                            <asp:ContentPlaceHolder ID="altContent1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </asp:Panel>
+                        <asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
+                            <asp:ContentPlaceHolder ID="leftContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </asp:Panel>
+                        <asp:Panel ID="divCenter" runat="server" Visible="True" SkinID="pnlPlain">
+                            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </asp:Panel>
+                        <asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
+                            <asp:ContentPlaceHolder ID="rightContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </asp:Panel>
+                        <asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
+                            <asp:ContentPlaceHolder ID="altContent2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </asp:Panel>
+                        <portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
+                            <link rel="stylesheet" href="/App_Themes/adminskin/css/toolbar.css">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <nav>
+                                        <ul class="nav navbar-nav listmenu">
+                                            <portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true" runat="server" />
+                                            <portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open" RenderAsListItem="true" runat="server" />
+                                            <portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog" RenderAsListItem="true" runat="server" />
+                                            <portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+                                            <portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true" runat="server" />
+                                            <portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+                                            <li>
+                                                <asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </li>
+                                        </ul>
+                                        <ul class="nav">
+                                            <li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <%--<script type="text/javascript">
+                    $(document).ready(function () {
+                        $("#pullmenucms").click(function (e) {
+                            e.preventDefault();
+                            if ($(this).parents('.cmsadminpanel').hasClass('toggled')) { ShowToolbar(); Set_Cookie('toolbarOpenState', 'open'); }
+                            else { HideToolbar(); Set_Cookie('toolbarOpenState', 'closed'); }
+                        });
+                        var openState = Get_Cookie('toolbarOpenState');
+                        if (openState != null) { if (openState == 'closed') { HideToolbar(); } if (openState == 'open') { ShowToolbar(); } }
+                    });
+                    function HideToolbar() { $('.cmsadminpanel').addClass("toggled"); $('.fa-chevron-circle-right').addClass('fa-rotate-180'); }
+                    function ShowToolbar() { $('.cmsadminpanel').removeClass("toggled"); $('.fa-chevron-circle-right').removeClass('fa-rotate-180'); }
+                </script>--%>
+                        </portal:AutoHidePanel>
+                    </div>
+                    <!-- /.container-fluid -->
+                </section>
+            </div>
+            <footer class="main-footer">
+                <portal:CopyrightLabel ID="cl1" runat="server" ShowYear="true" BeginYear="2015" />
+                <portal:gbPortalLink ID="lnkgbPortal" UseImage="false" runat="server" />
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 8.2.6.3
+                </div>
+            </footer>
+        </div>
+
+        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+        <script>
+            $.widget.bridge('uibutton', $.ui.button)
+        </script>
+        <!-- Bootstrap 4 -->
+        <script src="/App_Themes/adminskin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- ChartJS -->
+        <script src="/App_Themes/adminskin/plugins/chart.js/Chart.min.js"></script>
+        <!-- Sparkline -->
+        <script src="/App_Themes/adminskin/plugins/sparklines/sparkline.js"></script>
+        <!-- JQVMap -->
+        <script src="/App_Themes/adminskin/plugins/jqvmap/jquery.vmap.min.js"></script>
+        <script src="/App_Themes/adminskin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+        <!-- jQuery Knob Chart -->
+        <script src="/App_Themes/adminskin/plugins/jquery-knob/jquery.knob.min.js"></script>
+        <!-- daterangepicker -->
+        <script src="/App_Themes/adminskin/plugins/moment/moment.min.js"></script>
+        <script src="/App_Themes/adminskin/plugins/daterangepicker/daterangepicker.js"></script>
+        <!-- Tempusdominus Bootstrap 4 -->
+        <script src="/App_Themes/adminskin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+        <!-- Summernote -->
+        <script src="/App_Themes/adminskin/plugins/summernote/summernote-bs4.min.js"></script>
+        <!-- overlayScrollbars -->
+        <script src="/App_Themes/adminskin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="/App_Themes/adminskin/js/adminlte.js"></script>
+        <%--<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="/App_Themes/adminskin/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/App_Themes/adminskin/js/demo.js"></script>--%>
+
+        <link rel="stylesheet" href="/App_Themes/adminskin/plugins/fancybox/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="/App_Themes/adminskin/plugins/chosen/chosen.min.css">
+
+        <script src="/App_Themes/adminskin/plugins/fancybox/jquery.fancybox.min.js"></script>
+        <script src="/App_Themes/adminskin/plugins/cluetip/jquery.cluetip.min.js"></script>
+        <script src="/App_Themes/adminskin/plugins/chosen/chosen.jquery.min.js"></script>
+        <script src="/App_Themes/adminskin/js/plugins.js"></script>
+        <script src="/App_Themes/adminskin/js/admincp.js"></script>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="false" CodeBehind="MoMoRedirect.aspx.cs" Inherits="CanhCam.Web.ProductUI.MoMoRedirect" %>

@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DialogMaster.master.cs" Inherits="CanhCam.Web.DialogMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    
+    <link rel="stylesheet" href="/App_Themes/adminskin/plugins/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="/App_Themes/adminskin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+    <link rel="stylesheet" href="/App_Themes/adminskin/css/adminlte.min.css" />
+    <link rel="stylesheet" href="/App_Themes/adminskin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <link rel="stylesheet" href="/App_Themes/adminskin/css/global.css" />
+    <%--<portal:ScriptLoader ID="ScriptLoader1" IncludeFancyBox="true" runat="server" />--%>
+
+    <asp:ContentPlaceHolder ID="phHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="dialogpage">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+        <asp:ContentPlaceHolder ID="phMain" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <portal:Woopra ID="woopra11" runat="server" />
+    </form>
+</body>
+</html>

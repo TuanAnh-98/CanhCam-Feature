@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Published", "Published\", "{1CF4DA7C-9D7A-462E-851F-DDEDA5B24F33}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/Published"
+		Debug.AspNetCompiler.PhysicalPath = "Published\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Published\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Published"
+		Release.AspNetCompiler.PhysicalPath = "Published\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Published\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "17743"
+		VWDVirtualPath = "/"
+		SlnRelativePath = "Published\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanhCam.Features.Product", "CanhCam.Features.Product\CanhCam.Features.Product.csproj", "{0E8D5A83-A845-4643-953D-D48B987C2C79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanhCam.Features.Affiliate", "CanhCam.Features.Affiliate\CanhCam.Features.Affiliate.csproj", "{14C1A42F-DA78-4557-8F4D-4BC8CCD89A0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CF4DA7C-9D7A-462E-851F-DDEDA5B24F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF4DA7C-9D7A-462E-851F-DDEDA5B24F33}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8D5A83-A845-4643-953D-D48B987C2C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8D5A83-A845-4643-953D-D48B987C2C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8D5A83-A845-4643-953D-D48B987C2C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8D5A83-A845-4643-953D-D48B987C2C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C1A42F-DA78-4557-8F4D-4BC8CCD89A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C1A42F-DA78-4557-8F4D-4BC8CCD89A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C1A42F-DA78-4557-8F4D-4BC8CCD89A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C1A42F-DA78-4557-8F4D-4BC8CCD89A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17857597-9533-4D30-9ECF-F43EB6C2937E}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

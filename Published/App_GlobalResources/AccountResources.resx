@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountForText" xml:space="preserve">
+    <value>Account For</value>
+  </data>
+  <data name="AccountInfoLabel" xml:space="preserve">
+    <value>Account info</value>
+  </data>
+  <data name="AccountInformationLabel" xml:space="preserve">
+    <value>Account Information</value>
+  </data>
+  <data name="AddessListLabel" xml:space="preserve">
+    <value>Addess list</value>
+  </data>
+  <data name="AddNewAddress" xml:space="preserve">
+    <value>Add new</value>
+  </data>
+  <data name="AddNewAddressText" xml:space="preserve">
+    <value>Add new address</value>
+  </data>
+  <data name="AddressLabel" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AddressListLabel" xml:space="preserve">
+    <value>Address list</value>
+  </data>
+  <data name="AddressListText" xml:space="preserve">
+    <value>Address List</value>
+  </data>
+  <data name="AddressText" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back  to home</value>
+  </data>
+  <data name="ChangePasswordText" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="CityStateLabel" xml:space="preserve">
+    <value>City / State</value>
+  </data>
+  <data name="CommentProductBuyedLabel" xml:space="preserve">
+    <value>Comment product buyed</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="CopperMember" xml:space="preserve">
+    <value>Copper member</value>
+  </data>
+  <data name="CopperMemberIcon" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CountryLabel" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CurrentPointFormat" xml:space="preserve">
+    <value>You have {0} points in your account.</value>
+  </data>
+  <data name="CustomerDateFromLabel" xml:space="preserve">
+    <value>From date</value>
+  </data>
+  <data name="CustomerEditTitle" xml:space="preserve">
+    <value>Update customer</value>
+  </data>
+  <data name="CustomerEmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="CustomerEmailReferrerLabel" xml:space="preserve">
+    <value>Email of Referrer</value>
+  </data>
+  <data name="CustomerFirstNameLabel" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="CustomerInfo" xml:space="preserve">
+    <value>Customer information</value>
+  </data>
+  <data name="CustomerLastNameLabel" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="CustomerLoginNameLabel" xml:space="preserve">
+    <value>Login name</value>
+  </data>
+  <data name="CustomerNameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CustomerOrderHistoryLabel" xml:space="preserve">
+    <value>Order history</value>
+  </data>
+  <data name="CustomerPhoneLabel" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="CustomerPhoneReferrerLabel" xml:space="preserve">
+    <value>Phone number of Referrer</value>
+  </data>
+  <data name="CustomersListTitle" xml:space="preserve">
+    <value>Customers List</value>
+  </data>
+  <data name="CustomerTotalConfirmedMoneyLabel" xml:space="preserve">
+    <value>Confirmed money</value>
+  </data>
+  <data name="CustomerTotalMoneyLabel" xml:space="preserve">
+    <value>Total money spent</value>
+  </data>
+  <data name="CustomerTotalOrdersBoughtLabel" xml:space="preserve">
+    <value>Orders bought</value>
+  </data>
+  <data name="CustomerTotalUnconfirmedMoneyLabel" xml:space="preserve">
+    <value>Unconfirmed money</value>
+  </data>
+  <data name="CustomerUserIDLabel" xml:space="preserve">
+    <value>User code</value>
+  </data>
+  <data name="DailyLabel" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="DefaultAddress" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="DefaultLabel" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="DefaultText" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="DeleteButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="DistrictLabel" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="DoYouReallyWantToDeleteLabel" xml:space="preserve">
+    <value>Do you really want to delete</value>
+  </data>
+  <data name="EditLabel" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditText" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditUserAddressText" xml:space="preserve">
+    <value>Edit address</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Email is required!</value>
+  </data>
+  <data name="FridayLabel" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="FullNameLabel" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="FullNameRequired" xml:space="preserve">
+    <value>Full name is required!</value>
+  </data>
+  <data name="FullNameText" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="GeneralInformationLabel" xml:space="preserve">
+    <value>General Information</value>
+  </data>
+  <data name="GeneralInformationLabel1" xml:space="preserve">
+    <value>General information</value>
+  </data>
+  <data name="GeneralInformationText" xml:space="preserve">
+    <value>General information</value>
+  </data>
+  <data name="GoldMember" xml:space="preserve">
+    <value> Gold member</value>
+  </data>
+  <data name="GoldMemberIcon" xml:space="preserve">
+    <value>&lt;i class="fa fa-trophy" aria-hidden="true"&gt;&lt;/i&gt;</value>
+  </data>
+  <data name="IncludeVAT" xml:space="preserve">
+    <value>Included VAT</value>
+  </data>
+  <data name="InfoAcountText" xml:space="preserve">
+    <value>Info Account</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value> Member</value>
+  </data>
+  <data name="MemberIcon" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MondayLabel" xml:space="preserve">
+    <value>Mon</value>
+  </data>
+  <data name="MonthlyLabel" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="MyCommentLabel" xml:space="preserve">
+    <value>My comment</value>
+  </data>
+  <data name="MyInfoLabel" xml:space="preserve">
+    <value>My information</value>
+  </data>
+  <data name="MyInfoText" xml:space="preserve">
+    <value>My information</value>
+  </data>
+  <data name="MyOrdersLabel" xml:space="preserve">
+    <value>My Orders</value>
+  </data>
+  <data name="OrderDetailLabel" xml:space="preserve">
+    <value>Order details</value>
+  </data>
+  <data name="OrderListText" xml:space="preserve">
+    <value>Order list</value>
+  </data>
+  <data name="OrderListText1" xml:space="preserve">
+    <value>Order List</value>
+  </data>
+  <data name="OrderNotExist" xml:space="preserve">
+    <value>Order is not existed !</value>
+  </data>
+  <data name="OrderScheduleAddProductsText" xml:space="preserve">
+    <value>Add Products</value>
+  </data>
+  <data name="OrderScheduleAddressLabel" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="OrderScheduleAfterEvery2Label" xml:space="preserve">
+    <value>After every</value>
+  </data>
+  <data name="OrderScheduleAfterEveryLabel" xml:space="preserve">
+    <value>after every</value>
+  </data>
+  <data name="OrderScheduleConfirmationHeading" xml:space="preserve">
+    <value>Confirm Order</value>
+  </data>
+  <data name="OrderScheduleConfirmationLabel" xml:space="preserve">
+    <value>Order schedule confirmation</value>
+  </data>
+  <data name="OrderScheduleConfirmText" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="OrderScheduleCreatedDateText" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="OrderScheduleCreateNewLabel" xml:space="preserve">
+    <value>Create new order</value>
+  </data>
+  <data name="OrderScheduleCreateNewText" xml:space="preserve">
+    <value>Create Order</value>
+  </data>
+  <data name="OrderScheduleCreateText" xml:space="preserve">
+    <value>Create New</value>
+  </data>
+  <data name="OrderScheduleDailyDaysLabel" xml:space="preserve">
+    <value>day(s)</value>
+  </data>
+  <data name="OrderScheduleDailyLabel" xml:space="preserve">
+    <value>Daily:</value>
+  </data>
+  <data name="OrderScheduleDeleteText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="OrderScheduleEditEndDateLabel" xml:space="preserve">
+    <value>End date:</value>
+  </data>
+  <data name="OrderScheduleEditStartDateLabel" xml:space="preserve">
+    <value>Start date:</value>
+  </data>
+  <data name="OrderScheduleEditText" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="OrderScheduleEmailAlarmHourLabel" xml:space="preserve">
+    <value>hour(s)</value>
+  </data>
+  <data name="OrderScheduleEmailAlarmLabel" xml:space="preserve">
+    <value>Send notification email before:</value>
+  </data>
+  <data name="OrderScheduleEnabledText" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="OrderScheduleEnableLabel" xml:space="preserve">
+    <value>Enable:</value>
+  </data>
+  <data name="OrderScheduleHeading" xml:space="preserve">
+    <value>Order Schedule</value>
+  </data>
+  <data name="OrderScheduleLabel" xml:space="preserve">
+    <value>Order schedule</value>
+  </data>
+  <data name="OrderScheduleMonthlyDay2Label" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="OrderScheduleMonthlyDayLabel" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="OrderScheduleMonthlyLabel" xml:space="preserve">
+    <value>Monthly:</value>
+  </data>
+  <data name="OrderScheduleMonthlyMonthsLabel" xml:space="preserve">
+    <value>month(s)</value>
+  </data>
+  <data name="OrderScheduleNameLabel" xml:space="preserve">
+    <value>Order Name:</value>
+  </data>
+  <data name="OrderScheduleNameText" xml:space="preserve">
+    <value>Order Name</value>
+  </data>
+  <data name="OrderScheduleOccurLabel" xml:space="preserve">
+    <value>Occur:</value>
+  </data>
+  <data name="OrderSchedulePaymentMethodLabel" xml:space="preserve">
+    <value>Payment method:</value>
+  </data>
+  <data name="OrderScheduleProductListLabel" xml:space="preserve">
+    <value>Product List:</value>
+  </data>
+  <data name="OrderScheduleProductsText" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="OrderScheduleScheduleText" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="OrderScheduleSearchText" xml:space="preserve">
+    <value>Quick Search</value>
+  </data>
+  <data name="OrderScheduleShippingMethodLabel" xml:space="preserve">
+    <value>Shipping method:</value>
+  </data>
+  <data name="OrderScheduleSubtotalText" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="OrderScheduleUpdateText" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="OrderScheduleWeeklyLabel" xml:space="preserve">
+    <value>Weekly:</value>
+  </data>
+  <data name="OrderScheduleWeeklyWeeksLabel" xml:space="preserve">
+    <value>week(s)</value>
+  </data>
+  <data name="PendingPointFormat" xml:space="preserve">
+    <value>You have &lt;strong&gt;{0}&lt;/strong&gt; bonus points pending</value>
+  </data>
+  <data name="PhoneLabel" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PhoneNotValidLabel" xml:space="preserve">
+    <value>Phone not valid</value>
+  </data>
+  <data name="PhoneNumberLabel" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="PhoneNumberRequired" xml:space="preserve">
+    <value>Phone number is required!</value>
+  </data>
+  <data name="PhoneText" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PleaseChooseAddressLabel" xml:space="preserve">
+    <value>Please enter your address </value>
+  </data>
+  <data name="PleaseChooseCountryLabel" xml:space="preserve">
+    <value>Please choose countryLabel</value>
+  </data>
+  <data name="PleaseChooseDistrictLabel" xml:space="preserve">
+    <value>Please choose district</value>
+  </data>
+  <data name="PleaseChooseProvinceLabel" xml:space="preserve">
+    <value>Please choose province</value>
+  </data>
+  <data name="PleaseEnterYourCityStateLabel" xml:space="preserve">
+    <value>Please enter your city / state</value>
+  </data>
+  <data name="PleaseEnterYourNameLabel" xml:space="preserve">
+    <value>Please enter your name</value>
+  </data>
+  <data name="PleaseEnterYourPhoneLabel" xml:space="preserve">
+    <value>Please enter your phone</value>
+  </data>
+  <data name="PleaseEnterYourPostCodeLabel" xml:space="preserve">
+    <value>Please enter your post code / zip</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="PointAcceptedStatus" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="PointCancelStatus" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="PointContent" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="PointFomat" xml:space="preserve">
+    <value>You have &lt;strong&gt;{0}&lt;/strong&gt; bonus points</value>
+  </data>
+  <data name="PointHistoryTitle" xml:space="preserve">
+    <value>History of reward points</value>
+  </data>
+  <data name="PointPendingStatus" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="PointStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PointTime" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="PostCodeLabel" xml:space="preserve">
+    <value>PostCode / Zip</value>
+  </data>
+  <data name="ProductNameLabel" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="ProductViewedLabel" xml:space="preserve">
+    <value>Product viewed</value>
+  </data>
+  <data name="ProvinceLabel" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="ReceivedFrom" xml:space="preserve">
+    <value>Get bonus points from orders</value>
+  </data>
+  <data name="RecentOrdersLabel" xml:space="preserve">
+    <value>Recent orders</value>
+  </data>
+  <data name="RegisterDayLabel" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="RegisterMonthLabel" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="RegisterThanks" xml:space="preserve">
+    <value>Thank you for your registration</value>
+  </data>
+  <data name="RegisterYearLabel" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="RequestNoteLabel" xml:space="preserve">
+    <value>Request note</value>
+  </data>
+  <data name="RequestNoteRequired" xml:space="preserve">
+    <value>Request note is required!</value>
+  </data>
+  <data name="RequestReturnOrderLabel" xml:space="preserve">
+    <value>Request return order</value>
+  </data>
+  <data name="SaturdayLabel" xml:space="preserve">
+    <value>Sat</value>
+  </data>
+  <data name="SilverMember" xml:space="preserve">
+    <value> Silver member</value>
+  </data>
+  <data name="SilverMemberIcon" xml:space="preserve">
+    <value>&lt;i class="fa fa-trophy" aria-hidden="true"&gt;&lt;/i&gt;</value>
+  </data>
+  <data name="SubmitRequestButton" xml:space="preserve">
+    <value>Submit request</value>
+  </data>
+  <data name="SundayLabel" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="ThursdayLabel" xml:space="preserve">
+    <value>Thu</value>
+  </data>
+  <data name="TotalPointUserHave" xml:space="preserve">
+    <value>Total points :</value>
+  </data>
+  <data name="TuesdayLabel" xml:space="preserve">
+    <value>Tue</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="UpdateButton" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpdateDefaultAddress" xml:space="preserve">
+    <value>Use this address as the default</value>
+  </data>
+  <data name="UserMemberNextRankFormat" xml:space="preserve">
+    <value>The points required for {0} rank : {1}</value>
+  </data>
+  <data name="UserMemberRankFormat" xml:space="preserve">
+    <value>Your rank membership: {0} </value>
+  </data>
+  <data name="UserPointHistoryLabel" xml:space="preserve">
+    <value>User point history</value>
+  </data>
+  <data name="UserPointHistoryTitle" xml:space="preserve">
+    <value>User point histories</value>
+  </data>
+  <data name="UserProfileHomeLabel" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="UserProfileMyNotificationLabel" xml:space="preserve">
+    <value>My Notification</value>
+  </data>
+  <data name="UserProfileMyReviewsLabel" xml:space="preserve">
+    <value>My Reviews</value>
+  </data>
+  <data name="UserProfileProductViewedLabel" xml:space="preserve">
+    <value>Product viewed</value>
+  </data>
+  <data name="UserProfileRequestReturnOrderLabel" xml:space="preserve">
+    <value>Request Return</value>
+  </data>
+  <data name="UserProfileReviewsProductsPurchasedLabel" xml:space="preserve">
+    <value>Reviews Products Purchased </value>
+  </data>
+  <data name="UseThisAddessIsDefault" xml:space="preserve">
+    <value>Use This Addess Is Default</value>
+  </data>
+  <data name="UseThisAddressToDefaultLabel" xml:space="preserve">
+    <value>Use this address is default</value>
+  </data>
+  <data name="ViewAllLabel" xml:space="preserve">
+    <value>View all</value>
+  </data>
+  <data name="ViewAllText" xml:space="preserve">
+    <value>View all</value>
+  </data>
+  <data name="WardLabel" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="WednesdayLabel" xml:space="preserve">
+    <value>Wed</value>
+  </data>
+  <data name="WeeklyLabel" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="WelcomeMessageFormat" xml:space="preserve">
+    <value>Welcome: {FirstName} {LastName}</value>
+  </data>
+  <data name="WelcomeMessageFormat1" xml:space="preserve">
+    <value>Welcome: {FirstName} {LastName}</value>
+  </data>
+  <data name="WishListText" xml:space="preserve">
+    <value>Wish list</value>
+  </data>
+  <data name="WishListText1" xml:space="preserve">
+    <value>Wish List</value>
+  </data>
+</root>

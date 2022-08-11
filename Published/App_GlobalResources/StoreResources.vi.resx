@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="StoreAddressLabel" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="StoreAdminLabel" xml:space="preserve">
+    <value>Quản trị cửa hàng</value>
+  </data>
+  <data name="StoreChooseDropdown" xml:space="preserve">
+    <value>Chọn</value>
+  </data>
+  <data name="StoreCodeLabel" xml:space="preserve">
+    <value>Mã cửa hàng</value>
+  </data>
+  <data name="StoreContactLabel" xml:space="preserve">
+    <value>Người liên hệ</value>
+  </data>
+  <data name="StoreDefaultLabel" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="StoreDescriptionLabel" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="StoreDistrictDropdown" xml:space="preserve">
+    <value>Chọn quận/huyện</value>
+  </data>
+  <data name="StoreDistrictLabel" xml:space="preserve">
+    <value>Quận/huyện</value>
+  </data>
+  <data name="StoreEditLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="StoreEditTitle" xml:space="preserve">
+    <value>Chỉnh sửa cửa hàng</value>
+  </data>
+  <data name="StoreEmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="StoreFaxLabel" xml:space="preserve">
+    <value>Số fax</value>
+  </data>
+  <data name="StoreListTitle" xml:space="preserve">
+    <value>Danh sách cửa hàng</value>
+  </data>
+  <data name="StoreNameLabel" xml:space="preserve">
+    <value>Tên cửa hàng</value>
+  </data>
+  <data name="StoreOptionLabel" xml:space="preserve">
+    <value>Thuộc tính</value>
+  </data>
+  <data name="StoreOptionOrderOnlineLabel" xml:space="preserve">
+    <value>Nhận đơn online</value>
+  </data>
+  <data name="StorePhoneLabel" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="StoreProvinceDropdown" xml:space="preserve">
+    <value>Chọn tỉnh/thành</value>
+  </data>
+  <data name="StoreProvinceLabel" xml:space="preserve">
+    <value>Tỉnh/thành</value>
+  </data>
+  <data name="StorePublicLabel" xml:space="preserve">
+    <value>Hiển thị</value>
+  </data>
+  <data name="StorePriorityLabel" xml:space="preserve">
+    <value>Thứ tự ưu tiên</value>
+  </data>
+  <data name="StoreAPIDistrictCodeLabel" xml:space="preserve">
+    <value>Mã tỉnh</value>
+  </data>
+  <data name="StoreManagingAreaLabel" xml:space="preserve">
+    <value>Nơi cửa hàng quản lý</value>
+  </data>
+  <data name="StoreTakeOnlineOrderLabel" xml:space="preserve">
+    <value>Nhận đơn online</value>
+  </data>
+  <data name="APIEndpointLabel" xml:space="preserve">
+    <value>API Endpoint</value>
+  </data>
+  <data name="StoreDeleteConfirmMessage" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa. Sẽ không thể phục hồi nếu thực hiện thao tác?</value>
+  </data>
+  <data name="StoreSelectLabel" xml:space="preserve">
+    <value>Chọn Cửa hàng</value>
+  </data>
+  <data name="InventoryAllText" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="InventoryAPIProductIDLabel" xml:space="preserve">
+    <value>Mã API</value>
+  </data>
+  <data name="InventoryDisplayLabel" xml:space="preserve">
+    <value>Hiển thị</value>
+  </data>
+  <data name="InventoryEditTitle" xml:space="preserve">
+    <value>Chỉnh sửa tồn kho</value>
+  </data>
+  <data name="InventoryFromPriceLabel" xml:space="preserve">
+    <value>Giá từ</value>
+  </data>
+  <data name="InventoryFromQuantityLabel" xml:space="preserve">
+    <value>Số lượng từ</value>
+  </data>
+  <data name="InventoryInputtedText" xml:space="preserve">
+    <value>Sản phẩm đã nhập tồn</value>
+  </data>
+  <data name="InventoryListTitle" xml:space="preserve">
+    <value>Quản lý tồn kho</value>
+  </data>
+  <data name="InventoryNonInputtedText" xml:space="preserve">
+    <value>Sản phẩm chưa nhập tồn</value>
+  </data>
+  <data name="InventoryNoStoreMessage" xml:space="preserve">
+    <value>Vui lòng chọn một cửa hàng</value>
+  </data>
+  <data name="InventoryPriceLabel" xml:space="preserve">
+    <value>Giá</value>
+  </data>
+  <data name="InventoryProductCodeLabel" xml:space="preserve">
+    <value>Mã sản phẩm</value>
+  </data>
+  <data name="InventoryProductNameLabel" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
+  <data name="InventoryQuantityLabel" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="InventoryStatusDropdown" xml:space="preserve">
+    <value>Chọn trạng thái</value>
+  </data>
+  <data name="InventoryStatusLabel" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="InventoryStockDropdown" xml:space="preserve">
+    <value>Còn hàng</value>
+  </data>
+  <data name="InventoryStockoutDropdown" xml:space="preserve">
+    <value>Hết hàng</value>
+  </data>
+  <data name="InventoryStoreDropdown" xml:space="preserve">
+    <value>Chọn cửa hàng</value>
+  </data>
+  <data name="InventoryStoreLabel" xml:space="preserve">
+    <value>Cửa hàng</value>
+  </data>
+  <data name="InventoryStoreNameLabel" xml:space="preserve">
+    <value>Cửa hàng</value>
+  </data>
+  <data name="InventoryToLabel" xml:space="preserve">
+    <value>đến</value>
+  </data>
+  <data name="NumbersOnlyMessage" xml:space="preserve">
+    <value>Chỉ được nhập số</value>
+  </data>
+  <data name="UpdateStorePriorityTitle" xml:space="preserve">
+    <value>Cập nhật cửa hàng ưu tiên</value>
+  </data>
+  <data name="ImportInventoryListTitle" xml:space="preserve">
+    <value>Nhập hàng tồn</value>
+  </data>
+  <data name="OrderStoreLabel" xml:space="preserve">
+    <value>Cửa hàng</value>
+  </data>
+  <data name="AllStoreDropdown" xml:space="preserve">
+    <value>Tất cả cửa hàng</value>
+  </data>
+  <data name="StoreNotFoundInValid" xml:space="preserve">
+    <value>Không tìm thấy cửa hàng phù hợp. Vui lòng chọn cửa hàng khác</value>
+  </data>
+</root>

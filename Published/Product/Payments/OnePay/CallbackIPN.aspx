@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="false" CodeBehind="CallbackIPN.aspx.cs" Inherits="CanhCam.Web.ProductUI.OnePAYCallback2" %>

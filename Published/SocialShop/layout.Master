@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="CanhCam.Web.layout" %>
+
+<%@ Register TagPrefix="Site" TagName="SearchInput" Src="~/SocialShop/Controls/SearchInputControl.ascx" %>
+
+<!DOCTYPE html>
+<html id="Html1" runat="server">
+<head id="Head1" runat="server">
+    <title></title>
+    <portal:MetaContent ID="MetaContent" runat="server" />
+
+    <portal:ScriptLoader ID="ScriptLoader1" IncludeJQuery="true" IncludejQueryUICore="false" runat="server" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/SocialShop/skins/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/SocialShop/skins/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/SocialShop/skins/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/SocialShop/skins/css/style.css">
+
+    <portal:Favicon ID="Favicon1" runat="server" />
+    <portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
+
+    <!--*********************************************************************************************-->
+    <!-- Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn                          -->
+    <!-- 156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.                                 -->
+    <!-- Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn                    -->
+    <!-- Facebook: https://www.facebook.com/canhcam.vn                                               -->
+    <!--*********************************************************************************************-->
+</head>
+<body id="Body" runat="server">
+    <portal:FacebookSdk ID="fbsdk" runat="server" />
+    <portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
+    <form id="frmMain" runat="server">
+    <asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+    <asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+    <asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
+    <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+
+    <div id="wrapper">
+        <div class="banner">
+            <portal:MediaElement ID="MediaElement1" FileUrl="/Data/Sites/1/media/social-banner.jpg" runat="server" />
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/SocialShop"><i class="glyphicon glyphicon-home"></i></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <portal:PageMenu ID="MainMenu1" Position="1024" IsSubMenu="false" XsltFileName="SocialShop-MainMenu.xslt" runat="server" />
+                    <Site:SearchInput ID="SearchInput1" runat="server" />
+                </div>
+            </div>
+        </nav>
+        <asp:Panel ID="divAlt1" runat="server" CssClass="altcontent1">
+            <asp:ContentPlaceHolder ID="altContent1" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+        <asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
+			<asp:ContentPlaceHolder ID="leftContent" runat="server">
+			</asp:ContentPlaceHolder>
+		</asp:Panel>
+		<asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins" SkinID="pnlPlain">
+            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+			</asp:ContentPlaceHolder>
+		</asp:Panel>
+		<asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
+			<asp:ContentPlaceHolder ID="rightContent" runat="server">
+			</asp:ContentPlaceHolder>
+		</asp:Panel>
+        <asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
+            <asp:ContentPlaceHolder ID="altContent2" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+        <hr />
+        <p class="text-center"><portal:CopyrightLabel id="cl1" runat="server" ShowYear="true" BeginYear="2015" /></p>
+    </div>
+    <portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel hidden" runat="server">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav>
+                    <ul class="nav navbar-nav listmenu">
+                        <portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true" runat="server" />
+                        <portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open" RenderAsListItem="true" runat="server" />
+                        <portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog" RenderAsListItem="true" runat="server" />
+                        <portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+                        <portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true" runat="server" />
+                        <portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+                        <li>
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label class="sr-only">Mode</label>
+                                </div>
+                                <div class="form-group">
+                                    <asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#pullmenucms").click(function (e) {
+                    e.preventDefault();
+                    if ($(this).parents('.cmsadminpanel').hasClass('toggled')) { ShowToolbar(); Set_Cookie('toolbarOpenState', 'open'); }
+                    else { HideToolbar(); Set_Cookie('toolbarOpenState', 'closed'); }
+                });
+                var openState = Get_Cookie('toolbarOpenState');
+                if (openState != null) { if (openState == 'closed') { HideToolbar(); } if (openState == 'open') { ShowToolbar(); } }
+            });
+            function HideToolbar() { $('.cmsadminpanel').addClass("toggled"); $('.fa-chevron-circle-right').addClass('fa-rotate-180'); }
+            function ShowToolbar() { $('.cmsadminpanel').removeClass("toggled"); $('.fa-chevron-circle-right').removeClass('fa-rotate-180'); }
+        </script>
+    </portal:AutoHidePanel>
+    <script src="/SocialShop/skins/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/SocialShop/skins/js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="/SocialShop/skins/js/canhcam.js" type="text/javascript"></script>
+    <portal:Woopra ID="woopra11" runat="server" />
+    </form>
+</body>
+</html>

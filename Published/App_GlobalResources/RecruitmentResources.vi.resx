@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrowserOnServerLink" xml:space="preserve">
+    <value>Tải hình từ website</value>
+  </data>
+  <data name="ButtonDisabledPleaseWait" xml:space="preserve">
+    <value>Vui lòng đợi 1 chút</value>
+  </data>
+  <data name="ChooseDistrict" xml:space="preserve">
+    <value>Chọn quận/huyện</value>
+  </data>
+  <data name="ChooseProvinces" xml:space="preserve">
+    <value>Chọn tỉnh/thành</value>
+  </data>
+  <data name="ContentTab" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="DepartmentDescriptionLabel" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="DepartmentDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="DepartmentNameLabel" xml:space="preserve">
+    <value>Tên phòng ban</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="DisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="DisrtictLabel" xml:space="preserve">
+    <value>Quận/huyện</value>
+  </data>
+  <data name="EditLink" xml:space="preserve">
+    <value>Chỉnh sửa</value>
+  </data>
+  <data name="EnableKeywordFiltering" xml:space="preserve">
+    <value>Bật lọc từ khóa</value>
+  </data>
+  <data name="FileAttachmentLabel" xml:space="preserve">
+    <value>File đính kèm</value>
+  </data>
+  <data name="FriendlyUrlRegexWarning" xml:space="preserve">
+    <value>Url phải bắt đầu bằng ~ / hoặc http: // hoặc https: // và không được có khoảng trắng trong đó.</value>
+  </data>
+  <data name="HideOtherContentsOnDetailPage" xml:space="preserve">
+    <value>Ẩn các nội dung khác trên trang chi tiết</value>
+  </data>
+  <data name="HidePaginationOnDetailPage" xml:space="preserve">
+    <value>Ẩn phân trang trên trang chi tiết</value>
+  </data>
+  <data name="ImageDeleteConfirmMessage" xml:space="preserve">
+    <value>Bạn chắc chắn muốn xóa hình ảnh này?</value>
+  </data>
+  <data name="ImageFile" xml:space="preserve">
+    <value>Hình</value>
+  </data>
+  <data name="IsPublishedLabel" xml:space="preserve">
+    <value>Hiển thị?</value>
+  </data>
+  <data name="JobAddressLabel" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="JobAddressRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ</value>
+  </data>
+  <data name="JobApplyLable" xml:space="preserve">
+    <value>Nộp đơn tuyển dụng</value>
+  </data>
+  <data name="JobApplyRefreshLink" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="JobApplyThankYouLabel" xml:space="preserve">
+    <value>Thông tin của bạn đã được gửi cho chúng tôi.</value>
+  </data>
+  <data name="JobApplyViewAllCVLabel" xml:space="preserve">
+    <value>Xem tất cả CV</value>
+  </data>
+  <data name="JobAttachFile1Label" xml:space="preserve">
+    <value>File đính kèm 1</value>
+  </data>
+  <data name="JobAttachFile2Label" xml:space="preserve">
+    <value>File đính kèm 2</value>
+  </data>
+  <data name="JobAttachFileLabel" xml:space="preserve">
+    <value>File đính kèm</value>
+  </data>
+  <data name="JobCandidateInfoLabel" xml:space="preserve">
+    <value>Thông tin ứng viên</value>
+  </data>
+  <data name="JobEmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="JobEmailRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập email</value>
+  </data>
+  <data name="JobEmptyMessageWarning" xml:space="preserve">
+    <value>Vui lòng nhập nội dung</value>
+  </data>
+  <data name="JobFullNameLabel" xml:space="preserve">
+    <value>Họ tên</value>
+  </data>
+  <data name="JobFullNameRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập họ tên</value>
+  </data>
+  <data name="JobMessageLabel" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="JobNoteLabel" xml:space="preserve">
+    <value>Vui lòng điền đầy đủ thông tin bên dưới</value>
+  </data>
+  <data name="JobPhoneLabel" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="JobPhoneRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập điện thoại</value>
+  </data>
+  <data name="JobPositionLabel" xml:space="preserve">
+    <value>Vị trí ứng tuyển</value>
+  </data>
+  <data name="JobPositionRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập vị trí tuyển dụng</value>
+  </data>
+  <data name="JobRequiredLabel" xml:space="preserve">
+    <value>bắt buộc</value>
+  </data>
+  <data name="JobRequiredStarLabel" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="JobValidEmailLabel" xml:space="preserve">
+    <value>Email không hợp lệ</value>
+  </data>
+  <data name="JobViewCVFormat" xml:space="preserve">
+    <value>Danh sách CV ({0})</value>
+  </data>
+  <data name="JobViewCVTitle" xml:space="preserve">
+    <value>Danh sách CV</value>
+  </data>
+  <data name="LoadDepartmentList" xml:space="preserve">
+    <value>Hiển thị phòng ban</value>
+  </data>
+  <data name="LoadProvinceList" xml:space="preserve">
+    <value>Hiển thị Tỉnh thành phố</value>
+  </data>
+  <data name="MetaDescriptionLabel" xml:space="preserve">
+    <value>Meta description</value>
+  </data>
+  <data name="MetaKeywordsLabel" xml:space="preserve">
+    <value>Meta keywords</value>
+  </data>
+  <data name="MetaTab" xml:space="preserve">
+    <value>SEO</value>
+  </data>
+  <data name="OtherRecruitmentsPerPageSetting" xml:space="preserve">
+    <value>Số lượng tin khác trên mỗi trang</value>
+  </data>
+  <data name="PageUrlInUseErrorMessage" xml:space="preserve">
+    <value>Url đã được sử dụng. Bạn không thể sử dụng cùng một Url cho các trang khác nhau.</value>
+  </data>
+  <data name="ParentZonesSetting" xml:space="preserve">
+    <value>Danh mục cha</value>
+  </data>
+  <data name="PreviewLabel" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="ProvinceLabel" xml:space="preserve">
+    <value>Tỉnh thành</value>
+  </data>
+  <data name="RecruitmentAddNewTitle" xml:space="preserve">
+    <value>Thêm mới phòng ban</value>
+  </data>
+  <data name="RecruitmentAppliedCountLabel" xml:space="preserve">
+    <value>Số người ứng tuyển</value>
+  </data>
+  <data name="RecruitmentBeginDateRequired" xml:space="preserve">
+    <value>Vui lòng nhập ngày bắt đầu</value>
+  </data>
+  <data name="RecruitmentCodeLabel" xml:space="preserve">
+    <value>Mã tuyển dụng</value>
+  </data>
+  <data name="RecruitmentCommentPostCommentButton" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+  <data name="RecruitmentCommentPostCommentButtonAccessKey" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RecruitmentDateFormat" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="RecruitmentDeleteMultiWarning" xml:space="preserve">
+    <value>Bạn chắc chắn muốn xóa tin ứng tuyển?</value>
+  </data>
+  <data name="RecruitmentDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="RecruitmentDeleteWarning" xml:space="preserve">
+    <value>Bạn chắc chắn muốn xóa tin ứng tuyển?</value>
+  </data>
+  <data name="RecruitmentDepartmentDeleteWarning" xml:space="preserve">
+    <value>Bạn chắc chắn muốn xóa phòng ban này?</value>
+  </data>
+  <data name="RecruitmentDepartmentEdit" xml:space="preserve">
+    <value>Chỉnh sửa phòng ban</value>
+  </data>
+  <data name="RecruitmentDepartmentEditPage" xml:space="preserve">
+    <value>Thêm / Chỉnh sửa phòng ban</value>
+  </data>
+  <data name="RecruitmentDepartmentLabel" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="RecruitmentDepartmentListPage" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="RecruitmentDepartmentTitle" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="RecruitmentDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="RecruitmentEditBriefContentLabel" xml:space="preserve">
+    <value>Mô tả ngắn</value>
+  </data>
+  <data name="RecruitmentEditContentLabel" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="RecruitmentEditDeleteButton" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="RecruitmentEditDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="RecruitmentEditEndDateLabel" xml:space="preserve">
+    <value>Ngày kết thúc</value>
+  </data>
+  <data name="RecruitmentEditItemUrlLabel" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="RecruitmentEditLanguageLabel" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="RecruitmentEditLanguageNotCareLabel" xml:space="preserve">
+    <value>Không quan tâm</value>
+  </data>
+  <data name="RecruitmentEditLink" xml:space="preserve">
+    <value>Chỉnh sửa</value>
+  </data>
+  <data name="RecruitmentEditPreviewLabel" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="RecruitmentEditStartDateLabel" xml:space="preserve">
+    <value>Ngày bắt đầu</value>
+  </data>
+  <data name="RecruitmentEditTitle" xml:space="preserve">
+    <value>Chỉnh sửa tin tuyển dụng</value>
+  </data>
+  <data name="RecruitmentImagesLabel" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="RecruitmentImagesTab" xml:space="preserve">
+    <value>Hình</value>
+  </data>
+  <data name="RecruitmentImageTitleLabel" xml:space="preserve">
+    <value>Tiêu đề hình ảnh</value>
+  </data>
+  <data name="RecruitmentInsertLabel" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="RecruitmentLabel" xml:space="preserve">
+    <value>Tuyển dụng</value>
+  </data>
+  <data name="RecruitmentList" xml:space="preserve">
+    <value>Tin tuyển dụng</value>
+  </data>
+  <data name="RecruitmentListPage" xml:space="preserve">
+    <value>Tin tuyển dụng</value>
+  </data>
+  <data name="RecruitmentListTitle" xml:space="preserve">
+    <value>Tin tuyển dụng</value>
+  </data>
+  <data name="RecruitmentMediaTab" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="RecruitmentNameLabel" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="RecruitmentPositionLabel" xml:space="preserve">
+    <value>Vị trí</value>
+  </data>
+  <data name="RecruitmentQuantityLabel" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="RecruitmentSearchButton" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="RecruitmentsPerPageSetting" xml:space="preserve">
+    <value>Số lượng trên mỗi trang</value>
+  </data>
+  <data name="RecruitmentThumbnailLabel" xml:space="preserve">
+    <value>Thumbnail</value>
+  </data>
+  <data name="RecruitmentTimeFormat" xml:space="preserve">
+    <value>hh:mm</value>
+  </data>
+  <data name="RecruitmentUpdateButton" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="RecruitmentUrlConflictWithPhysicalPageError" xml:space="preserve">
+    <value>Vui lòng nhập một Url khác. Url đã nhập xung đột với một trang hiện có.</value>
+  </data>
+  <data name="RelatedRecruitmentsToShow" xml:space="preserve">
+    <value>Tuyển dụng liên quan để hiển thị</value>
+  </data>
+  <data name="SelectFromComputerLabel" xml:space="preserve">
+    <value>Chọn từ máy tính</value>
+  </data>
+  <data name="SelectZoneMessage" xml:space="preserve">
+    <value>Chuyên mục</value>
+  </data>
+  <data name="ShowAllImagesInRecruitmentList" xml:space="preserve">
+    <value>Hiển thị tất cả hình ảnh trong danh sách</value>
+  </data>
+  <data name="ShowAllRecruitmentsFromChildZoneSetting" xml:space="preserve">
+    <value>Hiển thị tất cả các mục từ danh mục con</value>
+  </data>
+  <data name="ShowHiddenContentsOnDetailPage" xml:space="preserve">
+    <value>Hiển thị nội dung ẩn trên trang chi tiết</value>
+  </data>
+  <data name="ShowOptionLabel" xml:space="preserve">
+    <value>Tùy chọn hiển thị</value>
+  </data>
+  <data name="ShowPageLeftContentSetting" xml:space="preserve">
+    <value>Hiển thị nội dung trang bên trái chi tiết ?</value>
+  </data>
+  <data name="ShowPageRightContentSetting" xml:space="preserve">
+    <value>Show Page Right Content in  detail?</value>
+  </data>
+  <data name="SubTitle" xml:space="preserve">
+    <value>Tiêu đề phụ</value>
+  </data>
+  <data name="TitleRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập Tiêu đề</value>
+  </data>
+  <data name="ViewMoreLabel" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+  <data name="XsltFileName" xml:space="preserve">
+    <value>Mẫu trang danh sách</value>
+  </data>
+  <data name="XsltFileNameDetailPage" xml:space="preserve">
+    <value>Mẫu trang chi tiết</value>
+  </data>
+  <data name="AttributeUpdateButton" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="AttributeTitleRequired" xml:space="preserve">
+    <value>Vui lòng nhập tiêu đề</value>
+  </data>
+  <data name="AttributeTitle" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="AttributeContent" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="AttributeUpAlternateText" xml:space="preserve">
+    <value>Chuyển thuộc tính được chọn lên trên danh sách</value>
+  </data>
+  <data name="AttributeDownAlternateText" xml:space="preserve">
+    <value>Chuyển thuộc tính được chọn xuống dưới trong danh sách</value>
+  </data>
+  <data name="AttributeDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa (Chọn)</value>
+  </data>
+  <data name="AttributeDeleteConfirmMessage" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa. Sẽ không thể phục hồi nếu thực hiện thao tác?</value>
+  </data>
+  <data name="AttributeNewLabel" xml:space="preserve">
+    <value>Thuộc tính mới</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>Thuộc tính</value>
+  </data>
+  <data name="CopyRecruitmentLabel" xml:space="preserve">
+    <value>Sao chép tin tuyển dụng</value>
+  </data>
+   <data name="CopyRecruitmentButton" xml:space="preserve">
+    <value>Sao chép</value>
+  </data>
+  <data name="CopyRecruitmentTitleLabel" xml:space="preserve">
+    <value>Tiêu đề  mới</value>
+  </data>
+  <data name="CopyRecruitmentPublishedLabel" xml:space="preserve">
+    <value>Hiển thị?</value>
+  </data>
+  <data name="CopyRecruitmentCopyImagesLabel" xml:space="preserve">
+    <value>Sao chép hình ảnh?</value>
+  </data>
+  <data name="RecruitmentSelectLabel" xml:space="preserve">
+    <value>Chọn tin tuyển dụng</value>
+  </data>
+  <data name="RecruitmentSpecialTilteFormat" xml:space="preserve">
+    <value>{0} vị trí đặc biệt</value>
+  </data>
+  <data name="RecruitmentSpecialTilte" xml:space="preserve">
+    <value>Tin tuyển dụng vị trí đặc biệt</value>
+  </data>
+  <data name="RecruitmentListFormat" xml:space="preserve">
+    <value>Danh sách {0}</value>
+  </data>
+  <data name="RecruitmentSelectedListLabel" xml:space="preserve">
+    <value>Danh sách được chọn</value>
+  </data>
+  <data name="IsSubZoneSetting" xml:space="preserve">
+    <value>Lấy con chuyên mục hiện tại</value>
+  </data>
+  <data name="MaxItemsToGet" xml:space="preserve">
+    <value>Số bài viết tối đa cần lấy</value>
+  </data>
+  <data name="RecruitmentPositionSetting" xml:space="preserve">
+    <value>Vị trí đặc biệt</value>
+  </data>
+   <data name="ShowAllRecruitmentFromChildZoneSetting" xml:space="preserve">
+    <value>Hiển thị tin tuyển dụng của chuyên mục con</value>
+  </data>
+  <data name="ShowAllImagesInRecruitmentList" xml:space="preserve">
+    <value>Hiển thị hình ảnh ở trang danh sách</value>
+  </data>
+  <data name="ZoneRecruitmentFeatureName" xml:space="preserve">
+    <value>Tin tuyển dụng theo chuyên mục</value>
+  </data>
+  <data name="RecruitmentSelectFormat" xml:space="preserve">
+    <value>Chọn {0}</value>
+  </data>
+  <data name="RecruitmentTypeSetting" xml:space="preserve">
+    <value>Loại tin tuyển dụng</value>
+  </data>
+  <data name="ParentZoneSetting" xml:space="preserve">
+    <value>Chọn chuyên mục</value>
+  </data>
+  <data name="RecruitmentSortBySetting" xml:space="preserve">
+    <value>Sắp xếp theo</value>
+  </data>
+  <data name="LoadAsDepartment" xml:space="preserve">
+    <value>Load theo danh sách phòng ban</value>
+  </data>
+  <data name="RecruitmentViewedLabel" xml:space="preserve">
+    <value>Lượt xem</value>
+  </data>
+  <data name="RecruitmentPermissions" xml:space="preserve">
+    <value>Tin tuyển dụng</value>
+  </data>
+  <data name="PermissionsRecruitmentCreate" xml:space="preserve">
+    <value>Tạo tin tuyển dụng</value>
+  </data>
+  <data name="PermissionsRecruitmentDelete" xml:space="preserve">
+    <value>Xóa tin tuyển dụng</value>
+  </data>
+  <data name="PermissionsRecruitmentUpdate" xml:space="preserve">
+    <value>Cập nhật tin tuyển dụng</value>
+  </data>
+  <data name="PermissionsRecruitmentViewList" xml:space="preserve">
+    <value>Xem danh sách tin tuyển dụng</value>
+  </data>
+</root>
